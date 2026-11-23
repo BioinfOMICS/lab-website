@@ -1,0 +1,51 @@
+{
+  "homeMosaic": [
+    {
+      "file": "lab2.jpeg",
+      "alt": "Members of the BioinfOMICS Lab standing together",
+      "focus": "center 40%"
+    },
+    {
+      "file": "lab.jpeg",
+      "alt": "Lab members at a gathering",
+      "focus": "center 35%"
+    },
+    {
+      "file": "lab3.jpeg",
+      "alt": "Lab members at a dinner, holding WCCheng Lab signs",
+      "focus": "center 45%"
+    },
+    {
+      "file": "lab5.jpeg",
+      "alt": "A lab dinner around a long table",
+      "focus": "center 55%"
+    },
+    {
+      "file": "lab4.jpeg",
+      "alt": "Lab members at a celebration",
+      "focus": "center 45%"
+    }
+  ],
+  "joinMain": {
+    "file": "lab2.jpeg",
+    "alt": "Lab members standing together"
+  },
+  "joinLife": [
+    {
+      "file": "lab.jpeg",
+      "alt": "Lab members at a gathering"
+    },
+    {
+      "file": "lab3.jpeg",
+      "alt": "Lab members at a dinner, holding WCCheng Lab signs"
+    },
+    {
+      "file": "lab4.jpeg",
+      "alt": "Lab members at a celebration"
+    },
+    {
+      "file": "lab5.jpeg",
+      "alt": "A lab dinner around a long table"
+    }
+  ]
+}

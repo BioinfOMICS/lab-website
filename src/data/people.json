@@ -1,0 +1,285 @@
+{
+  "pi": {
+    "name": "Prof. Wei-Chung Cheng",
+    "nameZh": "鄭維中",
+    "label": "Group leader",
+    "photo": "WCCheng.jpg",
+    "affiliation": "Program for Cancer Biology and Drug Discovery, China Medical University",
+    "education": [
+      "Ph.D., National Tsing Hua University"
+    ],
+    "interests": [
+      "Genomics",
+      "Lipidomics",
+      "Bioinformatics",
+      "Next Generation Sequencing"
+    ],
+    "experience": [
+      {
+        "period": "2022 – present",
+        "position": "Professor, Program for Cancer Biology and Drug Discovery, China Medical University"
+      },
+      {
+        "period": "2019 – 2022",
+        "position": "Associate Professor, Graduate Institute of Biomedical Sciences, China Medical University"
+      },
+      {
+        "period": "2015 – 2019",
+        "position": "Assistant Professor, Graduate Institute of Cancer Biology, China Medical University"
+      },
+      {
+        "period": "2014 – 2015",
+        "position": "Assistant Researcher, Research Center for Tumor Medical Science, China Medical University"
+      }
+    ]
+  },
+  "summary": "Four affiliated physicians, an affiliated professor, a postdoctoral fellow, five research assistants and five graduate students.",
+  "groups": [
+    {
+      "id": "affiliated-investigators",
+      "title": "Affiliated investigators",
+      "note": "Four physicians and one professor",
+      "people": [
+        {
+          "name": "Yo-Liang Lai",
+          "nameZh": "賴宥良",
+          "role": "Affiliated physician",
+          "inLab": "Former Ph.D. student in the lab",
+          "photo": "YLLai.jpg",
+          "position": "Attending Physician, Department of Radiation Oncology, China Medical University Hospital, Taiwan",
+          "education": [
+            "Ph.D., Graduate Institute of Biomedical Sciences, China Medical University",
+            "School of medicine, Kaohsiung Medical University, Taiwan"
+          ],
+          "interests": [
+            "Radiation oncology",
+            "Radiomics",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "name": "Yu-De Wang",
+          "nameZh": "王又德",
+          "role": "Affiliated physician",
+          "inLab": "Former Ph.D. student in the lab",
+          "photo": "YDWang.jpg",
+          "position": "Attending Physician, Department of Urology, China Medical University Hospital, Taiwan",
+          "education": [
+            "Ph.D., Graduate Institute of Biomedical Sciences, China Medical University",
+            "School of medicine, National Taiwan University, Taiwan"
+          ],
+          "interests": [
+            "Urology",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "name": "Wen-Jen Lin",
+          "nameZh": "林文仁",
+          "role": "Affiliated physician",
+          "inLab": "Former Ph.D. student in the lab",
+          "photo": "WJLin.png",
+          "position": "National Cheng Kung University Hospital",
+          "education": [
+            "Ph.D., Graduate Institute of Biomedical Sciences, China Medical University",
+            "School of medicine, China Medical University, Taiwan"
+          ],
+          "interests": [
+            "Lipidomic analysis",
+            "Lipoprotein composition and function",
+            "Cancer metabolism and drug resistance",
+            "Metabolic syndrome dyslipidemia"
+          ]
+        },
+        {
+          "name": "Shih-Tsung Fu",
+          "nameZh": "傅仕璁",
+          "role": "Affiliated physician",
+          "photo": "STFu.jpg",
+          "position": "Resident Physician, Department of Internal Medicine, China Medical University Hospital, Taiwan",
+          "education": [
+            "M.D., School of Medicine, China Medical University, Taiwan"
+          ],
+          "interests": [
+            "Internal Medicine",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "name": "Chia-Hsin Liu",
+          "nameZh": "劉佳鑫",
+          "role": "Affiliated professor",
+          "inLab": "Former postdoctoral fellow in the lab",
+          "photo": "Martin.png",
+          "position": "Graduate Institute of Clinical Medicine, College of Medicine, Kaohsiung Medical University",
+          "education": [
+            "National Yang-Ming University"
+          ],
+          "interests": [
+            "Bioinformatics",
+            "carcinobiology"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "members",
+      "title": "Lab members",
+      "note": "One postdoctoral fellow, five research assistants and five graduate students",
+      "people": [
+        {
+          "name": "Tzu-Yi Huang",
+          "nameZh": "黃子伊",
+          "role": "Postdoctoral research fellow",
+          "photo": "TYHuang.png",
+          "education": [
+            "Ph.D., Program in Molecular Medicine, National Yang Ming Chiao Tung University & Academia Sinica, Taiwan"
+          ],
+          "interests": [
+            "Translational Bioinformatics",
+            "AI-driven Multi-Omics Analysis",
+            "Drug Repurposing",
+            "Precision Medicine"
+          ]
+        },
+        {
+          "name": "Pei-Chun Shen",
+          "nameZh": "沈培鈞",
+          "role": "Research assistant",
+          "photo": "PCShen.png",
+          "education": [
+            "M.S., Institute of Bioinformatics and Systems Biology, National Chiao Tung University, Taiwan"
+          ],
+          "interests": [
+            "Molecular Biology",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "name": "Hsiu-Cheng Liu",
+          "nameZh": "劉修誠",
+          "role": "Research assistant",
+          "photo": "HCLiu.png",
+          "education": [
+            "M.S., Institute of Biomedical Sciences, China Medical University, Taiwan"
+          ],
+          "interests": [
+            "Statistics",
+            "Biomedical Sciences"
+          ]
+        },
+        {
+          "name": "Ya-Hsuan Chen",
+          "nameZh": "陳亞萱",
+          "role": "Research assistant",
+          "photo": "YHChen.jpg",
+          "education": [
+            "B.S., Statistics, Tunghai University, Taiwan"
+          ],
+          "interests": [
+            "Statistics"
+          ]
+        },
+        {
+          "name": "Yu-Tung Chou",
+          "nameZh": "周禹彤",
+          "role": "Research assistant",
+          "photo": "YTChou.jpg",
+          "education": [
+            "M.S., Biomedical Technology Program, Department of Life Sciences, National Chung Hsing University, Taiwan"
+          ],
+          "interests": [
+            "Cancer Biology",
+            "Spatial Proteomics",
+            "Biomedical Sciences"
+          ]
+        },
+        {
+          "name": "Kuan-Lin Huang",
+          "nameZh": "黃冠霖",
+          "role": "Research assistant",
+          "photo": "KLHuang.jpg",
+          "education": [
+            "M.S., Department of Food Science and Biotechnology, National Chung Hsing University, Taiwan"
+          ],
+          "interests": [
+            "Nutritional Metabolism",
+            "Targeted Metabolomics"
+          ]
+        },
+        {
+          "name": "Nguyen Thi Tuyet Anh",
+          "role": "Ph.D. student",
+          "photo": "Anh.jpeg",
+          "position": "Ph.D. Student, Graduate Institute of Biomedical Sciences, China Medical University, Taiwan",
+          "education": [
+            "M.Sc., Genetics, University of Science, Vietnam National University-HCMC, Vietnam"
+          ],
+          "interests": [
+            "Bioinformatics",
+            "Computational Oncology",
+            "Metagenomics"
+          ]
+        },
+        {
+          "name": "Tung-Ying Wu",
+          "nameZh": "吳東穎",
+          "role": "Ph.D. student",
+          "photo": "TYWu.jpg",
+          "position": "Attending Physician, Department of Obstetrics and Gynecology, China Medical University Hospital, Taichung, Taiwan",
+          "education": [
+            "Ph.D. Student, Graduate Institute of Biomedical Sciences, China Medical University, Taichung, Taiwan",
+            "M.D., School of Medicine, Chung Shan Medical University, Taichung, Taiwan"
+          ],
+          "interests": [
+            "Gynecologic Oncology",
+            "Endometrial Intraepithelial Neoplasia",
+            "Endometrial Cancer",
+            "Digital Pathology",
+            "Artificial Intelligence",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "name": "Cheng-Han Lin",
+          "nameZh": "林承翰",
+          "role": "Ph.D. student",
+          "photo": "CHLin.jpg",
+          "education": [
+            "Ph.D. Student, Graduate Institute of Biomedical Sciences, China Medical University, Taiwan",
+            "B.S., Department of Biological Technology, China Medical University, Taiwan"
+          ],
+          "interests": [
+            "Cancer Metabolism",
+            "Cancer Drug Resistance",
+            "Computational Oncology"
+          ]
+        },
+        {
+          "name": "I-Chen Lin",
+          "nameZh": "林依真",
+          "role": "M.S. student",
+          "photo": "ICLin.png",
+          "education": [
+            "School of Chinese Medicine, China Medical University, Taiwan"
+          ],
+          "interests": [
+            "Diagnosis of Traditional Chinese Medicine",
+            "Bioinformatics",
+            "Cancer genomics"
+          ]
+        },
+        {
+          "name": "Fu-Ming Cheng",
+          "nameZh": "鄭富銘",
+          "role": "M.S. student",
+          "photo": "FMCheng.jpg",
+          "position": "Attending Physician, Division of Hematology and Oncology, China Medical University Hospital, Taiwan",
+          "education": [
+            "M.D., School of Medicine, China Medical University, Taiwan"
+          ]
+        }
+      ]
+    }
+  ]
+}

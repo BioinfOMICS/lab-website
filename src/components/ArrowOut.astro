@@ -1,0 +1,13 @@
+---
+/** The small up-and-right arrow that marks a link leaving the site. */
+interface Props {
+  size?: number;
+  /** Stroke colour; defaults to the colour of the surrounding text. */
+  color?: string;
+  weight?: number;
+  /** Keep the arrow from shrinking inside a flex row. */
+  fixed?: boolean;
+}
+const { size = 13, color = 'currentColor', weight = 1.7, fixed = true } = Astro.props;
+---
+<svg aria-hidden="true" width={size} height={size} viewBox="0 0 14 14" style={`${fixed ? 'flex: 0 0 auto; ' : ''}fill: none; stroke: ${color}; stroke-width: ${weight}; stroke-linecap: round; stroke-linejoin: round`}><path d="M4 10 10 4M5 4h5v5"></path></svg>

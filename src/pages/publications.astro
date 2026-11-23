@@ -1,0 +1,104 @@
+---
+/**
+ * Publications: three lists (selected, other by year, book chapters). All three are in the
+ * page's HTML, so search engines and readers without scripts get everything; the buttons on
+ * the left only choose which list is on screen.
+ */
+import Base from '../layouts/Base.astro';
+import PageTitle from '../components/PageTitle.astro';
+import PublicationItem from '../components/PublicationItem.astro';
+import { otherPublicationCount, publications } from '../data';
+
+/** "2025" -> "y2025", "Before 2016" -> "yBefore2016": the id a year heading can be linked by. */
+const yearId = (year: string) => `y${year.replace(/[^A-Za-z0-9]+/g, '')}`;
+
+const tab = 'display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 48px; padding: 0 14px; box-sizing: border-box; border-width: 1px; border-style: solid; border-radius: 4px; font-family: inherit; font-size: 15px; font-weight: 600; text-align: left; cursor: pointer';
+const listHeading = "margin: 0; padding-bottom: 14px; border-bottom: 1px solid var(--ink); font-family: var(--font-serif); font-size: clamp(26px, 2.5vw, 34px); font-weight: 500; line-height: 1.15; letter-spacing: -0.015em";
+const yearHeading = "margin: 28px 0 0; font-family: var(--font-display); font-size: 26px; font-weight: 600; line-height: 1.2; letter-spacing: -0.02em";
+const smallLabel = 'font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--caption)';
+---
+<Base title="Publications" current="publications" description="Journal articles and a book chapter from the BioinfOMICS Lab, China Medical University, Taiwan, newest first.">
+
+<PageTitle crumb="Publications" title="Publications" lead="Journal articles and a book chapter from the lab, newest first. The group leader’s name is shown in bold." />
+
+<section>
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px) 88px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 36px 64px">
+
+<div style="flex: 1 1 240px; max-width: 320px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div data-tabs class="contents">
+<span style={smallLabel}>Show</span>
+<button type="button" class="p-tab" data-tab="selected" aria-pressed="true" style={tab}><span>Selected publications</span><span style="font-variant-numeric: tabular-nums">{publications.selected.length}</span></button>
+<button type="button" class="p-tab" data-tab="other" aria-pressed="false" style={tab}><span>Other publications</span><span style="font-variant-numeric: tabular-nums">{otherPublicationCount}</span></button>
+<button type="button" class="p-tab" data-tab="books" aria-pressed="false" style={tab}><span>Book &amp; chapter</span><span style="font-variant-numeric: tabular-nums">{publications.books.length}</span></button>
+</div>
+<div data-years class="contents">
+<span style={`margin-top: 18px; ${smallLabel}`}>Jump to year</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+{publications.other.map((group) => <a href={`#${yearId(group.year)}`} class="p-year" style="display: inline-flex; align-items: center; justify-content: center; min-width: 60px; min-height: 44px; padding: 0 10px; box-sizing: border-box; border-width: 1px; border-style: solid; border-radius: 4px; font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums">{group.year}</a>)}
+</div>
+</div>
+</div>
+
+<div style="flex: 999 1 560px; min-width: 0; max-width: 880px; display: flex; flex-direction: column">
+
+<div id="selected" data-panel="selected" data-active>
+<h2 style={listHeading}>Selected publications</h2>
+{publications.selected.map((publication) => <PublicationItem publication={publication} />)}
+</div>
+
+<div id="other" data-panel="other">
+<h2 style={listHeading}>Other publications</h2>
+{publications.other.map((group) => (
+  <>
+  <h3 id={yearId(group.year)} style={yearHeading}>{group.year}</h3>
+  {group.items.map((publication) => <PublicationItem publication={publication} />)}
+  </>
+))}
+</div>
+
+<div id="books" data-panel="books">
+<h2 style={listHeading}>Book &amp; chapter</h2>
+{publications.books.map((publication) => <PublicationItem publication={publication} kind="chapter" />)}
+</div>
+
+</div>
+</div>
+</section>
+
+</Base>
+
+<script>
+  // Choosing a list. The address keeps track of the choice (#selected, #other, #books, or a
+  // year such as #y2021), so a link to one list or one year can be shared.
+  const panels = [...document.querySelectorAll<HTMLElement>('[data-panel]')];
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-tab]')];
+  const years = document.querySelector<HTMLElement>('[data-years]');
+
+  function show(name: string) {
+    for (const panel of panels) panel.toggleAttribute('data-active', panel.dataset.panel === name);
+    for (const button of tabs) button.setAttribute('aria-pressed', String(button.dataset.tab === name));
+    years?.toggleAttribute('data-active', name === 'other');
+  }
+
+  function fromAddress() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return show('selected');
+    const target = document.getElementById(id);
+    const panel = target?.closest<HTMLElement>('[data-panel]');
+    if (!panel?.dataset.panel) return show('selected');
+    show(panel.dataset.panel);
+    // A year heading sits inside a list that was hidden a moment ago, so the browser could not
+    // jump to it by itself. Now that the list is showing, scroll there.
+    if (target !== panel) target?.scrollIntoView();
+  }
+
+  for (const button of tabs) {
+    button.addEventListener('click', () => {
+      const name = button.dataset.tab ?? 'selected';
+      show(name);
+      history.replaceState(null, '', `#${name}`);
+    });
+  }
+  window.addEventListener('hashchange', fromAddress);
+  fromAddress();
+</script>

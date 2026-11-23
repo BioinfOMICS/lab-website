@@ -1,0 +1,77 @@
+---
+/** Contact: email, phone, address and affiliation from src/data/site.json, and a map when one is set. */
+import Base from '../layouts/Base.astro';
+import PageTitle from '../components/PageTitle.astro';
+import ArrowOut from '../components/ArrowOut.astro';
+import JoinBand from '../components/JoinBand.astro';
+import { site } from '../data';
+
+const address = site.addressLines.join(' ');
+const mapsLink = `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: site.mapQuery })}`;
+
+const row = (first: boolean) => `align-self: stretch; display: flex; align-items: flex-start; gap: 18px; padding: 22px 0; border-top: 1px solid ${first ? 'var(--ink)' : 'var(--rule)'}`;
+const icon = 'flex: 0 0 auto; margin-top: 2px; fill: none; stroke: var(--teal); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round';
+const label = 'font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--caption)';
+const value = "font-family: var(--font-serif); font-size: 24px; line-height: 1.3";
+---
+<Base title="Contact" current="contact" description={`Contact the BioinfOMICS Lab: ${site.email}, ${site.phone}. ${address}.`}>
+
+<PageTitle crumb="Contact" title="Contact" lead="Get in touch with the lab by email or phone, or visit us in Taichung." />
+
+<section>
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px) 88px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px 64px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; border-bottom: 1px solid var(--rule)">
+
+<div style={row(true)}>
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style={icon}><path d="M3 6h18v12H3z"></path><path d="M3 7l9 6 9-6"></path></svg>
+<div style="flex: 1 1 0%; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style={label}>Email</span>
+<a href={`mailto:${site.email}`} class="j-lnk" style="display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-serif); font-size: 24px; overflow-wrap: anywhere">{site.email}</a>
+</div>
+</div>
+
+<div style={row(false)}>
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style={icon}><rect x="7" y="2.500" width="10" height="19" rx="2"></rect><path d="M11 18h2"></path></svg>
+<div style="flex: 1 1 0%; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style={label}>Phone</span>
+<span style={value}>{site.phone}</span>
+</div>
+</div>
+
+<div style={row(false)}>
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style={icon}><path d="M12 21s7-6.500 7-11.500a7 7 0 0 0-14 0C5 14.500 12 21 12 21z"></path><circle cx="12" cy="9.500" r="2.500"></circle></svg>
+<div style="flex: 1 1 0%; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+<span style={label}>Address</span>
+<span style={value}>{address}</span>
+<a href={mapsLink} target="_blank" rel="noopener" class="j-btn" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; margin-top: 8px; padding: 0 18px; border-radius: 4px; background: var(--teal); color: var(--paper); font-size: 14.5px; font-weight: 600">Open in Google Maps<ArrowOut /></a>
+</div>
+</div>
+
+<div style={row(false)}>
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style={icon}><path d="M4 20h16M6 20V6l6-3 6 3v14M10 10h4M10 14h4"></path></svg>
+<div style="flex: 1 1 0%; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style={label}>Affiliation</span>
+<span style="font-size: 16.5px; line-height: 1.6; color: var(--text-strong)">{site.affiliation}</span>
+</div>
+</div>
+
+</div>
+{site.mapEmbedUrl
+  ? (
+    <div style="flex: 1 1 420px; min-width: 0; box-sizing: border-box; aspect-ratio: 4 / 3; border: 1px solid var(--rule); background: var(--photo-bg)">
+    <iframe src={site.mapEmbedUrl} title="Map showing where the lab is" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display: block; width: 100%; height: 100%; border: 0"></iframe>
+    </div>
+  )
+  : import.meta.env.DEV && (
+    <div style="flex: 1 1 420px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; aspect-ratio: 4 / 3; padding: 24px; border: 1px dashed var(--dashed); background: var(--photo-bg); color: var(--text); text-align: center">
+    <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" style="fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round"><path d="M9 4l-6 2.500v13.500l6-2.500 6 2.500 6-2.500V4l-6 2.500L9 4z"></path><path d="M9 4v13.500M15 6.500V20"></path></svg>
+    <span style="font-size: 16px; font-weight: 600; line-height: 1.3; color: var(--ink)">Map</span>
+    <span style="max-width: 24em; font-size: 13.500px; line-height: 1.45">No map yet. Put Google's “Embed a map” link in mapEmbedUrl in src/data/site.json. This box shows only while developing.</span>
+    </div>
+  )}
+</div>
+</section>
+
+<JoinBand />
+
+</Base>

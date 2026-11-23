@@ -1,0 +1,134 @@
+[
+  {
+    "id": "driverdb",
+    "name": "DriverDB",
+    "kind": "Database",
+    "url": "http://driverdb.bioinfomics.org/",
+    "summary": "Pinpoints cancer driver genes by gathering and organising large-scale multi-omics data.",
+    "description": "A web-based database that helps researchers pinpoint the genetic changes, known as “driver genes,” that can trigger the development of cancer. It gathers and organizes large amounts of biological data to distinguish these key changes from other genetic alterations.",
+    "releases": [
+      {
+        "year": 2024,
+        "label": "DriverDB v4",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/52/D1/D1246/7255398"
+      },
+      {
+        "year": 2020,
+        "label": "DriverDB v3",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/48/D1/D863/5614573"
+      },
+      {
+        "year": 2016,
+        "label": "DriverDB v2",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/44/D1/D975/2503104"
+      },
+      {
+        "year": 2014,
+        "label": "DriverDB v1",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/42/D1/D1048/1042620"
+      }
+    ]
+  },
+  {
+    "id": "ym500",
+    "name": "YM500",
+    "kind": "Database",
+    "url": "http://ym500.bioinfomics.org/",
+    "summary": "Collects and examines small RNA sequencing data in cancer, with a focus on microRNAs.",
+    "description": "An online resource that collects and examines small RNA sequencing data in cancer, particularly microRNAs. YM500 allows researchers to navigate through complex datasets and analyses with ease, supporting a wide range of investigations.",
+    "releases": [
+      {
+        "year": 2017,
+        "label": "YM500 v3",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/45/D1/D925/2605868"
+      },
+      {
+        "year": 2015,
+        "label": "YM500 v2",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/43/D1/D862/2438425"
+      },
+      {
+        "year": 2013,
+        "label": "YM500 v1",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/41/D1/D285/1070913"
+      }
+    ]
+  },
+  {
+    "id": "lipidsig",
+    "name": "LipidSig",
+    "kind": "Web tool",
+    "url": "https://lipidsig.bioinfomics.org/",
+    "summary": "An analysis platform for identifying the important lipids within complex lipidomics data.",
+    "description": "An analysis platform focused on identifying important lipids within complex lipidomics data. It helps researchers find distinct patterns or levels of lipid molecules that could serve as markers for particular biological conditions.",
+    "releases": [
+      {
+        "year": 2024,
+        "label": "LipidSig v2",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/52/W1/W390/7665640"
+      },
+      {
+        "year": 2021,
+        "label": "LipidSig v1",
+        "journal": "Nucleic Acids Res.",
+        "paper": "https://academic.oup.com/nar/article/49/W1/W336/6291177"
+      }
+    ]
+  },
+  {
+    "id": "lipidfun",
+    "name": "LipidFun",
+    "kind": "Database",
+    "url": "https://lipidfun.bioinfomics.org/",
+    "summary": "A database of lipid functions, linking lipid molecules to cellular processes and diseases.",
+    "description": "A database designed to explore the roles of lipids in biological systems. LipidFun enables scientists to investigate how specific lipid molecules are connected to vital cellular processes and related diseases.",
+    "releases": [
+      {
+        "year": 2025,
+        "label": "LipidFun",
+        "journal": "Bioinformatics",
+        "paper": "https://academic.oup.com/bioinformatics/article/41/4/btaf110/8075122"
+      }
+    ]
+  },
+  {
+    "id": "lipidsigr",
+    "name": "LipidSigR",
+    "kind": "R package",
+    "url": "https://lipidsig.bioinfomics.org/lipidsigr/index.html",
+    "summary": "The companion R tool to LipidSig, for custom statistical analysis of lipidomics data.",
+    "description": "A companion R tool to LipidSig that incorporates lipidomics analysis into a flexible computing environment. LipidSigR allows scientists to perform custom statistical analyses on lipidomics data, enhancing the study of lipid-related health conditions.",
+    "releases": [
+      {
+        "year": 2025,
+        "label": "LipidSigR",
+        "journal": "Bioinform Adv.",
+        "paper": "https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf047/8068804"
+      }
+    ]
+  },
+  {
+    "id": "immir",
+    "name": "ImmiR",
+    "kind": "Database",
+    "url": "https://immir.bioinfomics.org/",
+    "summary": "Explores how microRNAs relate to immune checkpoints and immune infiltrates across cancer types.",
+    "description": "ImmiR is a database that explores the relationships between microRNAs and immune-related processes in cancer. Through heatmaps, correlation analyses, and interactive tables, it allows users to assess miRNA activity and examine their associations with immune cells and immune checkpoint pathways across multiple cancer types.",
+    "releases": [
+      {
+        "year": 2025,
+        "label": "ImmiR",
+        "journal": "Comput Struct Biotechnol J.",
+        "paper": "https://www.csbj.org/article/S2001-0370(25)00487-8/fulltext"
+      }
+    ]
+  }
+]

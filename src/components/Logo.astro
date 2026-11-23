@@ -1,0 +1,16 @@
+---
+/**
+ * The typeset logo: "Bioinf", a ring standing for the O, "MICS", then "Lab".
+ * It is decorative text; whatever wraps it carries the accessible name.
+ */
+interface Props {
+  /** A CSS font-size, for example "28px". */
+  size: string;
+  /** "dark" is for dark backgrounds such as the footer. */
+  tone?: 'light' | 'dark';
+}
+const { size, tone = 'light' } = Astro.props;
+const accent = tone === 'dark' ? 'var(--teal-on-dark)' : 'var(--teal)';
+const lab = tone === 'dark' ? 'var(--on-dark)' : 'var(--caption)';
+---
+<span aria-hidden="true" style={`font-family: var(--font-display); font-size: ${size}; font-weight: 700; line-height: 1; letter-spacing: -0.02em; white-space: nowrap`}><span>Bioinf</span><span style={`display: inline-block; box-sizing: border-box; width: 0.728em; height: 0.728em; margin: 0 0.05em -0.014em; border: 0.218em solid ${accent}; border-radius: 50%`}></span><span style={`color: ${accent}`}>MICS</span><span style={`font-family: var(--font-serif); font-weight: 400; letter-spacing: 0; color: ${lab}`}>{' '}Lab</span></span>

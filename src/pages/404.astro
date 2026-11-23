@@ -1,0 +1,21 @@
+---
+/** Shown for an address that matches no page. GitHub Pages serves this file as 404.html. */
+import Base from '../layouts/Base.astro';
+import { nav } from '../data';
+import { url } from '../lib/url';
+---
+<Base title="Page not found" description="This page could not be found on the BioinfOMICS Lab website.">
+
+<section style="border-bottom: 1px solid var(--rule); background: var(--bg-pale)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px) 96px; box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal)">Error 404</span>
+<h1 style="margin: 0; font-family: var(--font-display); font-size: clamp(36px, 4.2vw, 60px); font-weight: 600; line-height: 1.05; letter-spacing: -0.025em">Page not found</h1>
+<p style="margin: 0; max-width: 40em; font-size: 18px; line-height: 1.6; color: var(--text)">The page you asked for is not here. It may have moved when the site was rebuilt.</p>
+<a href={url('/')} class="j-btn" style="display: inline-flex; align-items: center; min-height: 52px; margin-top: 8px; padding: 0 26px; border-radius: 4px; background: var(--teal); color: var(--paper); font-size: 16px; font-weight: 600">Go to the home page</a>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 8px">
+{nav.map((item) => <a href={url(item.href)} class="j-lnk" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600">{item.label}</a>)}
+</div>
+</div>
+</section>
+
+</Base>

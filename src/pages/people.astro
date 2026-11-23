@@ -1,0 +1,73 @@
+---
+/** People: the group leader in full, then each group of people from src/data/people.json. */
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageTitle from '../components/PageTitle.astro';
+import SectionHead from '../components/SectionHead.astro';
+import PersonCard from '../components/PersonCard.astro';
+import JoinBand from '../components/JoinBand.astro';
+import { people, peopleCount } from '../data';
+import { personPhoto } from '../lib/images';
+import { NumberWord, joinWithAnd, numberWord } from '../lib/words';
+
+const pi = people.pi;
+const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+const groupCounts = people.groups.map((group) => `${numberWord(group.people.length)} ${lowerFirst(group.title)}`);
+const lead = `${NumberWord(peopleCount)} people: the group leader, ${joinWithAnd(groupCounts)}.`;
+
+const smallLabel = 'font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--caption)';
+---
+<Base title="People" current="people" description={`The people of the BioinfOMICS Lab: ${pi.name}, affiliated investigators and lab members.`}>
+
+<PageTitle crumb="People" title="People" lead={lead} />
+
+<section>
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 36px 56px">
+<Image src={personPhoto(pi.photo)} alt={`Portrait of ${pi.name}`} widths={[300, 600, 900]} sizes="300px" loading="eager" style="flex: 0 1 300px; min-width: 0; width: 300px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; background: var(--mist)" />
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal)">{pi.label}</span>
+<h2 style="margin: 0; font-family: var(--font-serif); font-size: clamp(30px, 3vw, 42px); font-weight: 500; line-height: 1.1; letter-spacing: -0.015em">{pi.name}{pi.nameZh && <>{' '}<span style="font-family: var(--font-cjk); font-size: 0.6em; font-weight: 400; letter-spacing: 0; color: var(--text)">{pi.nameZh}</span></>}</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--text)">{pi.affiliation}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 24px 40px">
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--ink)">
+<span style={smallLabel}>Education</span>
+<p style="margin: 0; font-size: 15.5px; line-height: 1.6">{pi.education.map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--ink)">
+<span style={smallLabel}>Research interests</span>
+<p style="margin: 0; font-size: 15.5px; line-height: 1.6">{pi.interests.join(' · ')}</p>
+</div>
+</div>
+{pi.experience.length > 0 && (
+  <div style="display: flex; flex-direction: column; padding-top: 14px; border-top: 1px solid var(--ink)">
+  <span style={`padding-bottom: 6px; ${smallLabel}`}>Work experience</span>
+  {pi.experience.map((job) => (
+    <div style="display: flex; flex-wrap: wrap; gap: 2px 24px; padding: 10px 0; border-bottom: 1px solid var(--rule)">
+    <span style="flex: 0 0 120px; font-size: 14.5px; font-weight: 600; font-variant-numeric: tabular-nums">{job.period}</span>
+    <span style="flex: 1 1 320px; min-width: 0; font-size: 15px; line-height: 1.5; color: var(--text-strong)">{job.position}</span>
+    </div>
+  ))}
+  </div>
+)}
+</div>
+</div>
+</section>
+
+{people.groups.map((group, i) => (
+  <section id={group.id} style={i % 2 === 0 ? 'background: var(--bg-pale); border-top: 1px solid var(--rule)' : 'border-top: 1px solid var(--rule)'}>
+  <div style={`max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px)${i === people.groups.length - 1 ? ' 88px' : ''}; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px`}>
+  <SectionHead title={group.title}>
+  <span style="font-size: 14px; color: var(--caption)">{group.note}</span>
+  </SectionHead>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 36px 40px">
+  {group.people.map((person) => <PersonCard person={person} />)}
+  </div>
+  </div>
+  </section>
+))}
+
+<JoinBand />
+
+</Base>

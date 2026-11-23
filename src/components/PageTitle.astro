@@ -1,0 +1,19 @@
+---
+/** The pale band at the top of every inner page: breadcrumb, page title, one-sentence lead. */
+import { url } from '../lib/url';
+
+interface Props {
+  /** The page's name in the breadcrumb, e.g. "Join Us". */
+  crumb: string;
+  title: string;
+  lead: string;
+}
+const { crumb, title, lead } = Astro.props;
+---
+<section style="border-bottom: 1px solid var(--rule); background: var(--bg-pale)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px) 52px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<nav aria-label="Breadcrumb" style="font-size: 13.5px; line-height: 1.5; color: var(--caption)"><a href={url('/')} class="j-lnk">Home</a> / {crumb}</nav>
+<h1 style="margin: 0; font-family: var(--font-display); font-size: clamp(36px, 4.2vw, 60px); font-weight: 600; line-height: 1.05; letter-spacing: -0.025em">{title}</h1>
+<p style="margin: 0; max-width: 40em; font-size: 18px; line-height: 1.6; color: var(--text)">{lead}</p>
+</div>
+</section>

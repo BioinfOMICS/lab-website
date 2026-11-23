@@ -1,0 +1,20 @@
+---
+/** The line icon of a research field. The id matches "id" in src/data/research.json. */
+import type { ResearchField } from '../data';
+
+interface Props {
+  id: ResearchField['id'];
+  size?: number;
+  weight?: number;
+}
+const { id, size = 30, weight = 1.6 } = Astro.props;
+
+const paths: Record<ResearchField['id'], string> = {
+  bioinformatics: '<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"></path>',
+  'cancer-genomics':
+    '<path d="M8 3c0 4.5 8 4.5 8 9s-8 4.5-8 9"></path><path d="M16 3c0 4.5-8 4.5-8 9s8 4.5 8 9"></path><path d="M9.500 6h5M9.500 18h5M10.500 12h3"></path>',
+  lipidomics: '<path d="M12 3.500c3 3.600 5.500 6.900 5.500 10a5.500 5.500 0 0 1-11 0c0-3.100 2.500-6.400 5.500-10z"></path>',
+  'omics-analysis': '<path d="M12 4l8 4-8 4-8-4 8-4z"></path><path d="M4 12l8 4 8-4"></path><path d="M4 16l8 4 8-4"></path>',
+};
+---
+<svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" style={`fill: none; stroke: var(--teal); stroke-width: ${weight}; stroke-linecap: round; stroke-linejoin: round`} set:html={paths[id]} />

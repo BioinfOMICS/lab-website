@@ -1,0 +1,63 @@
+---
+/**
+ * The frame every page shares: document head, fonts, styles, header and footer.
+ * A page passes its own name, which menu entry is current, and which header to use.
+ */
+import '@fontsource-variable/inter';
+import '@fontsource-variable/outfit';
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/newsreader/opsz-italic.css';
+import '../styles/global.css';
+
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { site, type NavKey } from '../data';
+import { url } from '../lib/url';
+
+interface Props {
+  /** The page's name for the browser tab. Leave out on the home page. */
+  title?: string;
+  /** One or two sentences for search engines and link previews. */
+  description?: string;
+  /** Which menu entry to mark as the current page. */
+  current?: NavKey;
+  header?: 'home' | 'inner';
+}
+const { title, description = site.description, current, header = 'inner' } = Astro.props;
+const fullTitle = title ? `${title} · ${site.name}` : `${site.name} · China Medical University, Taiwan`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+/**
+ * A copy published under *.github.io is a preview, not the lab's own address, so search
+ * engines are asked to leave it out. A build for the lab's domain does not get the tag.
+ */
+const isPreview = Astro.site?.hostname.endsWith('.github.io') ?? false;
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+{isPreview && <meta name="robots" content="noindex" />}
+<link rel="canonical" href={canonical} />
+<link rel="icon" href={url('/favicon.ico')} sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+<link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
+<link rel="sitemap" href={url('/sitemap-index.xml')} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<script is:inline>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<SiteHeader variant={header} current={current} />
+<main id="main">
+<slot />
+</main>
+<SiteFooter />
+</body>
+</html>

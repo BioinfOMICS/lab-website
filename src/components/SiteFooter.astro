@@ -1,0 +1,33 @@
+---
+/** The dark footer on every page: logo and note, contact details, links. */
+import Logo from './Logo.astro';
+import { nav, site } from '../data';
+import { url } from '../lib/url';
+
+const explore = nav.filter((item) => item.key !== 'contact');
+const year = new Date().getFullYear();
+---
+<footer style="flex: 1 0 auto; display: flex; flex-direction: column; background: var(--ink); color: var(--paper)">
+<div style="flex: 1 0 auto; width: 100%; max-width: 1280px; margin: 0 auto; padding: 64px clamp(20px, 4vw, 48px) 32px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 72px">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<span role="img" aria-label={site.name}><Logo size="28px" tone="dark" /></span>
+<p style="margin: 0; max-width: 26em; font-size: 15px; line-height: 1.6; color: var(--on-dark)">{site.footerNote}</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-dark-caption)">Contact</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--paper)">{site.addressLines.map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--paper)">Tel {site.phone}</p>
+<a href={`mailto:${site.email}`} class="j-foot" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500">{site.email}</a>
+</div>
+<nav aria-label="Footer" style="flex: 0 1 200px; display: flex; flex-direction: column">
+<span style="margin-bottom: 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-dark-caption)">Explore</span>
+{explore.map((item) => <a href={url(item.href)} class="j-foot" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px">{item.label}</a>)}
+</nav>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 24px; border-top: 1px solid var(--dark-rule); font-size: 13.5px; color: var(--on-dark-caption)">
+<span>© {year} {site.copyrightHolder}. All rights reserved.</span>
+<span>{site.location}</span>
+</div>
+</div>
+</footer>

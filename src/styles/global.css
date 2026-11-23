@@ -1,0 +1,213 @@
+/*
+ * Design tokens. Every colour and font on the site is named here once;
+ * change a value here and all pages follow.
+ */
+:root {
+  /* teal, the accent */
+  --teal: #0B6477;
+  --teal-dark: #063F4C;
+  --teal-ink: #0B3D48;
+  --teal-tint: #E6F1F3;
+  --teal-on-dark: #7CC5D3;
+  --teal-on-dark-hover: #BFE3EA;
+
+  /* ink and text */
+  --ink: #13212B;
+  --text-strong: #33434D;
+  --text: #45545E;
+  --caption: #5E6C75;
+
+  /* surfaces and lines on white */
+  --paper: #FFFFFF;
+  --bg-pale: #F5F7F7;
+  --bg-hover: #EEF3F4;
+  --rule: #D8DEE2;
+  --mist: #E6ECEE;
+  --border: #C9D2D7;
+  --photo-bg: #DDE4E7;
+  --dashed: #9FB0B9;
+
+  /* on the dark bands */
+  --on-dark: #C9D5DB;
+  --on-dark-caption: #A9B8C1;
+  --dark-rule: #2E414D;
+  --dark-line: #3B5361;
+  --dark-border: #5B7482;
+  --dark-panel: #1A2B36;
+  --dark-panel-hover: #243845;
+  --ink-on-light-teal: #0B2530;
+
+  /* type */
+  --font-sans: 'Inter Variable', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+  --font-display: 'Outfit Variable', 'Inter Variable', sans-serif;
+  --font-serif: 'Newsreader Variable', Georgia, serif;
+  --font-cjk: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* On a screen taller than the page, the footer grows to fill the rest (see SiteFooter), not the page body. */
+main {
+  display: block;
+  flex: 0 0 auto;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* links */
+a { color: var(--teal); }
+a:hover { color: var(--teal-dark); }
+
+.j-nav { color: var(--ink); text-decoration: none; }
+.j-nav:hover { color: var(--teal); background: var(--bg-hover); }
+
+.j-ttl { color: var(--ink); text-decoration: none; }
+.j-ttl:hover { color: var(--teal); text-decoration: underline; }
+
+.j-lnk { color: var(--teal); text-decoration: none; }
+.j-lnk:hover { color: var(--teal-dark); text-decoration: underline; }
+
+.j-btn { text-decoration: none; }
+.j-btn:hover { filter: brightness(.9); }
+
+.j-foot { color: var(--on-dark); text-decoration: none; }
+.j-foot:hover { color: var(--paper); text-decoration: underline; }
+
+/* links and buttons on the dark bands */
+.d-lnk { color: var(--teal-on-dark); text-decoration: none; }
+.d-lnk:hover { color: var(--teal-on-dark-hover); text-decoration: underline; }
+
+.d-btn { text-decoration: none; }
+.d-btn:hover { background: var(--dark-panel-hover); }
+
+/* header: a row of links on wide screens, a Menu button on narrow ones */
+.nav-d { display: flex; }
+.nav-m { display: none; }
+.nav-m summary { list-style: none; cursor: pointer; }
+.nav-m summary::-webkit-details-marker { display: none; }
+
+/* home page header: logo centred above the menu */
+.hd { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.hd-brand { flex-direction: column; align-items: center !important; justify-content: center; gap: 6px; }
+
+@media (max-width: 860px) {
+  .nav-d { display: none; }
+  .nav-m { display: block; }
+  .hd {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+  .hd-brand { flex: 1 1 0; min-width: 0; align-items: flex-start !important; }
+  .hd-inst { font-size: 10.5px !important; letter-spacing: 0.06em !important; }
+}
+
+/* home page photo mosaic: one large tile and four small ones */
+.mosaic {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  height: clamp(280px, 25vw, 360px);
+}
+.mosaic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+}
+.mosaic .m-big { grid-row: 1 / span 2; }
+
+@media (max-width: 760px) {
+  .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: auto; }
+  .mosaic img { height: auto; aspect-ratio: 4 / 3; }
+  .mosaic .m-big { grid-column: 1 / span 2; grid-row: auto; }
+}
+
+/* tools page */
+.t-rel { color: var(--ink); text-decoration: none; }
+.t-rel:hover { color: var(--teal); background: var(--bg-pale); }
+
+.t-row { color: var(--paper); text-decoration: none; }
+.t-row:hover { background: var(--dark-panel); }
+
+/* publications page */
+.p-tab { background: var(--paper); color: var(--ink); border-color: var(--border); }
+.p-tab:hover { border-color: var(--ink); }
+.p-tab[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.p-year { color: var(--ink); text-decoration: none; background: var(--paper); border-color: var(--border); }
+.p-year:hover { color: var(--teal); border-color: var(--teal); }
+
+.p-open { color: var(--teal); }
+.p-open:hover { background: var(--bg-hover); }
+
+/* A wrapper that groups elements without becoming a box of its own. */
+.contents { display: contents; }
+
+/* With scripts on, only the chosen list shows. Without scripts all three lists stay visible. */
+html.js [data-panel]:not([data-active]),
+html.js [data-years]:not([data-active]),
+html:not(.js) [data-tabs] {
+  display: none;
+}
+
+/* research page */
+.r-chip { color: var(--ink); text-decoration: none; background: var(--paper); border-color: var(--border); }
+.r-chip:hover { color: var(--teal); border-color: var(--teal); }
+
+/* keyboard focus */
+a:focus-visible,
+summary:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+/* skip link: appears when reached with the keyboard */
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip:focus { top: 12px; color: var(--paper); }
+
+/* notes that show only while developing, never in the published site */
+.dev-note {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px dashed var(--dashed);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}

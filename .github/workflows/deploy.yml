@@ -1,0 +1,60 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+#
+# Put together from two sources:
+#   - the workflow in Astro's guide "Deploy your Astro Site to GitHub Pages"
+#     (checkout, withastro/action, deploy-pages; https://docs.astro.build/en/guides/deploy/github/)
+#   - GitHub's starter workflow for Astro (the "Setup Pages" step and the --site / --base
+#     flags; https://github.com/actions/starter-workflows/blob/main/pages/astro.yml)
+#
+# "Setup Pages" reads the address this repository is published at from its Pages settings and
+# hands it to the build. So this one file works at https://<account>.github.io/<repository>/
+# and, once the lab's domain is attached in Settings -> Pages, at that domain.
+# Nothing in the source needs editing when the address changes.
+#
+# Before the first run: Settings -> Pages -> Source must be set to "GitHub Actions".
+name: Deploy to GitHub Pages
+
+on:
+  # Runs on every push to the main branch
+  push:
+    branches: [main]
+  # Allows a manual run from the Actions tab
+  workflow_dispatch:
+
+# Allow this job to clone the repository and create a Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a run in progress is allowed to finish
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: 1
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v7
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install, build, and upload your site
+        uses: withastro/action@v6
+        with:
+          build-cmd: npx --no-install astro build --site "${{ steps.pages.outputs.origin }}" --base "${{ steps.pages.outputs.base_path }}"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

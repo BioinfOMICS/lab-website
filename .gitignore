@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output and Astro's generated types and cache
+dist/
+.astro/
+
+# local environment
+.env
+.env.*
+!.env.example
+
+# logs and OS files
+npm-debug.log*
+.DS_Store
+
+
+# working notes and reference copies, kept on the maintainer's machine only
+CLAUDE.md
+CHANGELOG.md
+ref_doc/
+_archive/
+.claude/

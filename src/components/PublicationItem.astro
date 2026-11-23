@@ -1,0 +1,19 @@
+---
+/**
+ * One entry in a publication list: authors (group leader in bold), title, journal in
+ * italics, volume and pages, and a button that opens the paper.
+ */
+import { joinerOf, splitAuthors, type Publication } from '../data';
+
+interface Props {
+  publication: Publication;
+  /** Used in the button's spoken label. */
+  kind?: 'paper' | 'chapter';
+}
+const { publication: p, kind = 'paper' } = Astro.props;
+const authors = splitAuthors(p.authors);
+---
+<div style="display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule)">
+<p style="flex: 1 1 0%; min-width: 0; margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--text)">{authors.before}<strong style="font-weight: 600; color: var(--ink)">{authors.name}</strong>{authors.after}{joinerOf(p)}{p.title}{' '}<span style="font-family: var(--font-serif); font-style: italic; font-weight: 600; font-size: 17px; color: var(--ink)">{p.journal}</span>{' '}{p.details}</p>
+<a href={p.url} target="_blank" rel="noopener" aria-label={`Open this ${kind}`} class="p-open" style="flex: 0 0 44px; display: inline-flex; align-items: center; justify-content: center; height: 44px; box-sizing: border-box; border: 1px solid var(--rule); border-radius: 4px"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round"><path d="M4 10 10 4M5 4h5v5"></path></svg></a>
+</div>

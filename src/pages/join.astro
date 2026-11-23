@@ -1,0 +1,48 @@
+---
+/** Join Us: who the lab is looking for, how to apply, and a few photos of lab life. */
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageTitle from '../components/PageTitle.astro';
+import SectionHead from '../components/SectionHead.astro';
+import DevNote from '../components/DevNote.astro';
+import { photos, site } from '../data';
+import { labPhoto } from '../lib/images';
+import { url } from '../lib/url';
+
+const openings = ['Graduate students', 'Research assistants', 'Postdoctoral fellows'];
+---
+<Base title="Join Us" current="join" description="Openings at the BioinfOMICS Lab for graduate students, research assistants, and postdoctoral fellows in computational systems biology.">
+
+<PageTitle crumb="Join Us" title="Join us" lead="We currently have openings for graduate students, research assistants, and postdoctoral fellows in computational systems biology." />
+
+<section>
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px 64px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 20px">
+<h2 style="margin: 0; font-family: var(--font-serif); font-size: clamp(28px, 2.7vw, 36px); font-weight: 500; line-height: 1.15; letter-spacing: -0.015em">Who we are looking for</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: var(--text)">In particular, we are looking for researchers interested in studying human disease and omics data analysis.</p>
+<div style="align-self: stretch; display: flex; flex-direction: column; border-bottom: 1px solid var(--rule)">
+{openings.map((opening) => <div style="display: flex; align-items: center; min-height: 52px; border-top: 1px solid var(--rule); font-family: var(--font-serif); font-size: 21px">{opening}</div>)}
+</div>
+<DevNote style="align-self: stretch">[Add what applicants should send, for example a CV and a short statement of research interests]</DevNote>
+<div style="align-self: stretch; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px; background: var(--teal-tint)">
+<h3 style="margin: 0; font-family: var(--font-serif); font-size: 24px; font-weight: 500; line-height: 1.2">How to apply</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--text-strong)">If you are interested, please email us.</p>
+<a href={`mailto:${site.email}`} class="j-btn" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 4px; background: var(--teal); color: var(--paper); font-size: 15.5px; font-weight: 600">Email {site.email}</a>
+</div>
+</div>
+<Image src={labPhoto(photos.joinMain.file)} alt={photos.joinMain.alt} widths={[420, 640, 840, 1120]} sizes="(max-width: 1000px) 92vw, 560px" loading="eager" style="flex: 1 1 420px; min-width: 0; width: 420px; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--mist)" />
+</div>
+</section>
+
+<section style="background: var(--bg-pale); border-top: 1px solid var(--rule)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px) 88px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<SectionHead title="Life in the lab">
+<a href={url('/people/')} class="j-lnk" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600">Meet the members →</a>
+</SectionHead>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+{photos.joinLife.map((photo) => <Image src={labPhoto(photo.file)} alt={photo.alt} widths={[280, 420, 560, 840]} sizes="(max-width: 600px) 92vw, (max-width: 1100px) 46vw, 290px" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--mist)" />)}
+</div>
+</div>
+</section>
+
+</Base>

@@ -1,0 +1,79 @@
+---
+/** Research: what the lab does, the topics it works on, and its four research fields. */
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageTitle from '../components/PageTitle.astro';
+import SectionHead from '../components/SectionHead.astro';
+import FieldIcon from '../components/FieldIcon.astro';
+import DevNote from '../components/DevNote.astro';
+import { publicationCount, research, toolById, tools } from '../data';
+import { researchFigure } from '../lib/images';
+import { url } from '../lib/url';
+import { NumberWord, moreThanHundreds, numberWord } from '../lib/words';
+
+const chip = 'display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; border-width: 1px; border-style: solid; border-radius: 4px; font-size: 14.5px; font-weight: 600';
+---
+<Base title="Research" current="research" description="We use bioinformatics strategies to dissect and understand cancer omics data: bioinformatics, cancer genomics, lipidomics and omics analysis.">
+
+<PageTitle crumb="Research" title="Research" lead="We use bioinformatics strategies to dissect and understand cancer omics data." />
+
+<section>
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 28px 72px">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal)">{research.about.eyebrow}</span>
+<h2 style="margin: 0; font-family: var(--font-serif); font-size: clamp(28px, 2.6vw, 36px); font-weight: 500; line-height: 1.2; letter-spacing: -0.015em; text-wrap: balance">{research.about.heading}</h2>
+</div>
+<div style="flex: 1.7 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+{research.about.paragraphs.map((paragraph) => <p style="margin: 0; font-size: 17px; line-height: 1.7; color: var(--text)">{paragraph}</p>)}
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid var(--ink)">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--caption)">{research.topicsLabel}</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+{research.topics.map((topic) => <span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 14px; border-radius: 4px; background: var(--teal-tint); font-size: 14.5px; font-weight: 500; color: var(--teal-ink)">{topic}</span>)}
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: var(--bg-pale); border-top: 1px solid var(--rule)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px) 88px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<SectionHead title="Research fields">
+<span style="font-size: 14px; color: var(--caption)">{NumberWord(research.fields.length)} fields the lab works in</span>
+</SectionHead>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 24px">
+{research.fields.map((field) => (
+  <div id={field.id} style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid var(--rule); background: var(--paper)">
+  <FieldIcon id={field.id} size={34} weight={1.5} />
+  <h3 style="margin: 4px 0 0; font-family: var(--font-serif); font-size: 30px; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em">{field.title}</h3>
+  <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--text)">{field.summary}</p>
+  {field.description && <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--text)">{field.description}</p>}
+  {field.figure && <Image src={researchFigure(field.figure)} alt={field.figureAlt} widths={[480, 720, 960, 1200]} sizes="(max-width: 1000px) 90vw, 520px" style="display: block; width: 100%; height: auto; border: 1px solid var(--rule)" />}
+  {(!field.description || !field.figure) && <DevNote>[Add two or three sentences about this field, and a representative figure]</DevNote>}
+  <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--rule)">
+  <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--caption)">Related resources</span>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+  {field.related === 'all'
+    ? <a href={url('/tools/')} class="r-chip" style={chip}>All {numberWord(tools.length)} tools &amp; databases →</a>
+    : field.related.map((id) => <a href={`${url('/tools/')}#${id}`} class="r-chip" style={chip}>{toolById(id).name}</a>)}
+  </div>
+  </div>
+  </div>
+))}
+</div>
+</div>
+</section>
+
+<section style="background: var(--ink); color: var(--paper)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: var(--font-serif); font-size: clamp(26px, 2.5vw, 34px); font-weight: 500; line-height: 1.15; letter-spacing: -0.015em">See the work</h2>
+<p style="margin: 0; max-width: 40em; font-size: 16px; line-height: 1.6; color: var(--on-dark)">{NumberWord(tools.length)} databases and web tools, and {moreThanHundreds(publicationCount)} publications.</p>
+</div>
+<div style="flex: 0 1 auto; display: flex; flex-wrap: wrap; gap: 12px">
+<a href={url('/tools/')} class="j-btn" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 4px; background: var(--teal-on-dark); color: var(--ink-on-light-teal); font-size: 15.5px; font-weight: 600">Tools &amp; databases →</a>
+<a href={url('/publications/')} class="j-btn" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; box-sizing: border-box; border: 1px solid var(--dark-border); border-radius: 4px; color: var(--paper); font-size: 15.5px; font-weight: 600">Publications →</a>
+</div>
+</div>
+</section>
+
+</Base>

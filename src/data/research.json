@@ -1,0 +1,65 @@
+{
+  "about": {
+    "eyebrow": "About the lab",
+    "heading": "Advancing genome research in the big-data era",
+    "paragraphs": [
+      "In the age of rapid technological advancements, the field of genome research has entered a transformative “big data” era. This shift, propelled by breakthroughs in high-throughput technologies, makes it possible to analyze biological data across various molecular levels, including the genome, transcriptome, proteome, and metabolome. The successful completion of large cancer projects has further opened doors to exploring and constructing extensive, intricate genomic datasets across multiple omics areas.",
+      "At the BioinfOMICS Lab, we specialize in employing bioinformatics strategies to dissect and understand cancer omics data. Our team has developed a range of databases and web tools designed to facilitate this analysis. Moreover, we actively collaborate with experimental biologists and medical scientists, engaging in research on pivotal topics such as cancer immunology, the discovery of cancer biomarkers, the study of cancer stem cells, and the development of novel bioinformatics tools."
+    ]
+  },
+  "topicsLabel": "Topics we work on with collaborators",
+  "topics": [
+    "Cancer immunology",
+    "Cancer biomarker discovery",
+    "Cancer stem cells",
+    "Novel bioinformatics tools"
+  ],
+  "fields": [
+    {
+      "id": "bioinformatics",
+      "title": "Bioinformatics",
+      "summary": "Computational strategies, databases and web tools that turn high-throughput data into biological insight.",
+      "description": "",
+      "figure": "",
+      "figureAlt": "",
+      "related": "all"
+    },
+    {
+      "id": "cancer-genomics",
+      "title": "Cancer Genomics",
+      "summary": "Pinpointing the driver genes and biomarkers behind cancer development and prognosis.",
+      "description": "",
+      "figure": "",
+      "figureAlt": "",
+      "related": [
+        "driverdb",
+        "ym500",
+        "immir"
+      ]
+    },
+    {
+      "id": "lipidomics",
+      "title": "Lipidomics",
+      "summary": "Finding lipid signatures in complex lipidomics data and linking them to cellular processes and disease.",
+      "description": "",
+      "figure": "",
+      "figureAlt": "",
+      "related": [
+        "lipidsig",
+        "lipidsigr",
+        "lipidfun"
+      ]
+    },
+    {
+      "id": "omics-analysis",
+      "title": "Omics Analysis",
+      "summary": "Integrating the genome, transcriptome, proteome and metabolome to study cancer across molecular levels.",
+      "description": "",
+      "figure": "",
+      "figureAlt": "",
+      "related": [
+        "driverdb"
+      ]
+    }
+  ]
+}

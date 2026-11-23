@@ -1,0 +1,794 @@
+{
+  "selected": [
+    {
+      "authors": "Lin WJ, Wang YD, Liu CH, Liu HC, Shen PC, Chen YH, Liang WT, Lin YZ, Wang SC, Lai YL*, Cheng WC*",
+      "title": "ImmiR: A database of microRNAs associated with immune checkpoints and infiltrates.",
+      "journal": "Comput Struct Biotechnol J.",
+      "details": "2025 Nov 28;27:5281-5288.",
+      "url": "https://www.csbj.org/article/S2001-0370(25)00487-8/fulltext"
+    },
+    {
+      "authors": "Lai YL, Wang CC, Hsu KW, Yu CF, Lin YL, Shen PC, Tsai MH, Chen FH*, Cheng WC*",
+      "joiner": " ",
+      "title": "Integrative multi-omics and preclinical analyses identify miR-4776-5p as a prognostic radiosensitizer for patients undergoing radiotherapy for head-and-neck cancer.",
+      "journal": "Discov Oncol.",
+      "details": "2025 Oct 28;16(1):1979.",
+      "url": "https://link.springer.com/article/10.1007/s12672-025-03784-6"
+    },
+    {
+      "authors": "Hsu JM*, Liu CX, Xia WY, Chen CY, Cheng WC, Hou JW, Hung MC*",
+      "title": "MTAP deficiency confers resistance to cytosolic nucleic acid sensing and STING agonists.",
+      "journal": "Science.",
+      "details": "2025 Oct 9;390(6769):eadl4089.",
+      "url": "https://www.science.org/doi/10.1126/science.adl4089"
+    },
+    {
+      "authors": "Laio PY, Lin WJ, Shen PC, Yang CR, Yu YC, Yeh CC, LB Jeng, Lai HC, Cheng WC*, Ma WL*",
+      "title": "Ether-Lipids Accumulation Promotes Hepatocellular Carcinoma Progression Linked to PPAR Deficiency.",
+      "journal": "J of Biomed Sci.",
+      "details": "2025 Sep 12; 32:89.",
+      "url": "https://link.springer.com/article/10.1186/s12929-025-01178-y"
+    },
+    {
+      "authors": "Lin WJ, Liu CH, Hung MS, Shen PC, Liu HC, Tsai MH, Lai YL, Wang YD, Hung MC, Chang NW*, Cheng WC*",
+      "title": "LipidFun: a database of lipid functions.",
+      "journal": "Bioinformatics.",
+      "details": "2025 Mar 29; 41(4):btaf110.",
+      "url": "https://academic.oup.com/bioinformatics/article/41/4/btaf110/8075122"
+    },
+    {
+      "authors": "Liu CH, Shen PC, Tsai MH, Liu HC, Lin WJ, Lai YL, Wang YD, Hung MC, Cheng WC*",
+      "title": "LipidSigR: a R-based solution for integrated lipidomics data analysis and visualization.",
+      "journal": "Bioinform Adv.",
+      "details": "2025 Mar 10;5(1):vbaf047.",
+      "url": "https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf047/8068804"
+    },
+    {
+      "authors": "Liu CH, Shen PC, Lin WJ, Liu HC, Tsai MH, Huang TY, Chen IC, Lai YL, Wang YD, Hung MC, Cheng WC*",
+      "title": "LipidSig 2.0: integrating lipid characteristic insights into advanced lipidomics data analysis",
+      "journal": "Nucleic Acids Res.",
+      "details": "2024 May 6; 52(W1):W390-W397.",
+      "url": "https://academic.oup.com/nar/article/52/W1/W390/7665640"
+    },
+    {
+      "authors": "Huang YK, Cheng WC, Kuo TT, Yang JC, Wu YC, Wu HH, Lo CC, Hsieh CY, Wong SC, Lu CH, Wu WL, Liu SJ, Li YC, Lin CC, Shen CN, Hung MC, Lin JT, Yeh CC*, Sher YP*",
+      "title": "Inhibition of ADAM9 promotes the selective degradation of KRAS and sensitizes pancreatic cancers to chemotherapy.",
+      "journal": "Nat Cancer.",
+      "details": "2024 Mar;5(3):400-419.",
+      "url": "https://www.nature.com/articles/s43018-023-00720-x"
+    },
+    {
+      "authors": "Yang CR, Lin WJ, Shen PC, Liao PY, Dai YC, Hung YC, Lai HC, Mehmood S, Cheng WC*, Ma WL*",
+      "title": "Phenotypic and metabolomic characteristics of mouse models of metabolic associated steatohepatitis.",
+      "journal": "Biomark Res.",
+      "details": "2024 Jan 9;12(1):6.",
+      "url": "https://biomarkerres.biomedcentral.com/articles/10.1186/s40364-023-00555-9"
+    },
+    {
+      "authors": "Liu CH, Lai YL, Shen PC, Liu HC, Tsai MH, Wang YD, Lin WJ, Chen FH, Li CY, Wang SC, Hung MC, Cheng WC*",
+      "title": "DriverDBv4: a multi-omics integration database for cancer driver gene research",
+      "journal": "Nucleic Acids Res.",
+      "details": "2024 Jan 5;52(D1):D1246-D1252.",
+      "url": "https://academic.oup.com/nar/article/52/D1/D1246/7255398"
+    },
+    {
+      "authors": "Peng PH, Chen JL, Wu HH, Yang WH, Lin LJ, Lai JC, Chang JS, Syu JL, Wu HT, Hsu FT, Cheng WC* Hsu KW*",
+      "title": "Interplay between lncRNA RP11-367G18.1 variant 2 and YY1 plays a vital role in hypoxia-mediated gene expression and tumorigenesis.",
+      "journal": "Cancer Cell Int.",
+      "details": "2023 Nov 8;23(1):266.",
+      "url": "https://cancerci.biomedcentral.com/articles/10.1186/s12935-023-03067-6"
+    },
+    {
+      "authors": "Widjaya MA, Liu CH, Lee SD*, Cheng WC*",
+      "title": "Transcriptomics Meta-Analysis Reveals Phagosome and Innate Immune System Dysfunction as Potential Mechanisms in the Cortex of Alzheimer's Disease Mouse Strains.",
+      "journal": "J Mol Neurosci.",
+      "details": "2023 Oct;73(9-10):773-786.",
+      "url": "https://link.springer.com/article/10.1007/s12031-023-02152-9"
+    },
+    {
+      "authors": "Widjaya MA, Cheng YJ, Kuo YM, Liu CH, Cheng WC* Lee SD*",
+      "title": "Transcriptomic Analyses of Exercise Training in Alzheimer's Disease Cerebral Cortex.",
+      "journal": "J Alzheimers Dis.",
+      "details": "2023 Mar 23; 93(1):349-363.",
+      "url": "https://journals.sagepub.com/doi/full/10.3233/JAD-221139"
+    },
+    {
+      "authors": "Hsu KW, Liu SH, Lai YL, Chen FH, Lin LJ, Peng PH, Li CY, Wang SC, Chen JL, Wu HH, Wu MZ, Sher YP, Cheng WC*",
+      "title": "Using bioinformatics approaches to identify survival-related oncomiRs as potential miRNA-based treatments for lung adenocarcinoma.",
+      "journal": "Comput Struct Biotechnol J.",
+      "details": "2022 Aug 22;20:4626-4635.",
+      "url": "https://www.csbj.org/article/S2001-0370(22)00376-2/fulltext"
+    },
+    {
+      "authors": "Lai YL, Liu CH, Wang SC, Huang SP, Cho YC, Bao BY, Su CC, Yeh HC, Lee CH, Teng PC, Chuu CP, Chen DN, Li CY*, Cheng WC*",
+      "title": "Identification of a Steroid Hormone-Associated Gene Signature Predicting the Prognosis of Prostate Cancer through an Integrative Bioinformatics Analysis.",
+      "journal": "Cancers (Basel) .",
+      "details": "2022 Mar 19;14(6):1565.",
+      "url": "https://www.mdpi.com/2072-6694/14/6/1565"
+    },
+    {
+      "authors": "Lin YZ, Liu SH, Wu WR, Shen YC, Wang YL, Liao CC, Lin PL, Chang H, Liu LC, Cheng WC*",
+      "title": "miR-4759 suppresses breast cancer through immune checkpoint blockade.",
+      "journal": "Comput Struct Biotechnol J.",
+      "details": "2022 Jan;20:241-251.",
+      "url": "https://www.csbj.org/article/S2001-0370(21)00529-8/fulltext"
+    },
+    {
+      "authors": "Teng PC, Huang SP, Liu CH, Lin TY, Cho YC, Lai YL, Wang SC, Yeh HC, Chuu CP, Chen DN, Cheng WC*",
+      "title": "Identification of DNA Damage Repair-Associated Prognostic Biomarkers for Prostate Cancer Using Transcriptomic Data Analysis.",
+      "journal": "Int J Mol Sci.",
+      "details": "2021 Oct 29;22(21):11771.",
+      "url": "https://www.mdpi.com/1422-0067/22/21/11771"
+    },
+    {
+      "authors": "Liu SH, Hsu KW, Lai YL, Lin YF, Chen FH, Peng PH, Lin LJ, Wu HH, Li Chia Yang, Wang SC, Wu MZ, Sher YP*, Cheng WC*",
+      "title": "Systematic identification of clinically relevant miRNAs for potential miRNA-based therapy in lung adenocarcinoma.",
+      "journal": "Molecular Therapy-Nucleic Acids.",
+      "details": "2021 Sep 3; 25: 1-10",
+      "url": "https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(21)00114-1"
+    },
+    {
+      "authors": "Chao YC, Chang HC, Jiang JK, Yang CY, Chen FH, Lai YL, Lin WJ, Li CY, Wang SC, Yang MH,Lin YF* Cheng WC*",
+      "title": "Using bioinformatics approaches to investigate driver genes and identify BCL7A as a prognostic gene in colorectal cancer.",
+      "journal": "Comput Struct Biotechnol J.",
+      "details": "2021 Jul 1;19:3922-3929",
+      "url": "https://www.csbj.org/article/S2001-0370(21)00282-8/fulltext"
+    },
+    {
+      "authors": "Lin WJ, Shen PC, Liu HC, Cho YC, Hsu MK, Lin IC, Chen FH, Yang JC, Ma WL, Cheng WC*",
+      "title": "LipidSig: a web-based tool for lipidomic data analysis.",
+      "journal": "Nucleic Acids Res.",
+      "details": "2021 Jul 2;49(W1):W336-W345.",
+      "url": "https://academic.oup.com/nar/article/49/W1/W336/6291177"
+    },
+    {
+      "authors": "Laio TS☨, Cheng WC☨, Yang CY, Chen YQ, Su SH, Yeh TY, Lan HY, Lee CC, Lin HH, Lin CC, Lu RH, Chiou ET, Jiang JK*, Hwang WL*",
+      "title": "The microRNA-210-Stathmin1 Axis Decreases Cell Stiffness to Facilitate the Invasiveness of Colorectal Cancer Stem Cells.",
+      "journal": "Cancers",
+      "details": "2021 Apr 12;13(8):1833",
+      "url": "https://www.mdpi.com/2072-6694/13/8/1833"
+    },
+    {
+      "authors": "Cheng WC Chang CY, Lo CC, Hsieh CY, Kuo TT, Tseng GC, Wong SC, Chiang SF, Huang KC, Lai LC, Lu TP, Chao KSC*",
+      "joiner": " ",
+      "title": "Identification of theranostic factors for patients developing metastasis after surgery for early-stage lung adenocarcinoma.",
+      "journal": "Theranostics.",
+      "details": "2021 Jan 26;11(8):3661-3675",
+      "url": "https://www.thno.org/v11p3661.htm"
+    },
+    {
+      "authors": "Qi Y, Lai YL, Shen PC, Chen FH, Lin LJ, Wu HH, Peng PH,Hsu KW*, Cheng WC*",
+      "title": "Identification and validation of a miRNA-based prognostic signature for cervical cancer through an integrated bioinformatics approach.",
+      "journal": "Sci Rep.",
+      "details": "2020 Dec 17; 10(1):22270.",
+      "url": "https://www.nature.com/articles/s41598-020-79337-4"
+    },
+    {
+      "authors": "Chen L☨, Ma WL☨, Cheng WC☨, Yang JC, Wang HC, Su YT, Ahmad A, Hung YC, Chang WC*",
+      "title": "Targeting lipid droplet lysophosphatidylcholine for cisplatin chemotherapy.",
+      "journal": "J Cell Mol Med.",
+      "details": "2020 Jun 16;24(13):7187-7200.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.15218"
+    },
+    {
+      "authors": "Liu SH, Shen PC, Chen CY, Hsu AN, Cho YC, Lai YL, Chen FH, Li CY, Wang SC, Chen M, Chung IF, Cheng WC*",
+      "title": "DriverDBv3: a multi-omics database for cancer driver gene research.",
+      "journal": "Nucleic Acids Res.",
+      "details": "2020 Jan 8;48(D1):D863-D870.",
+      "url": "https://academic.oup.com/nar/article/48/D1/D863/5614573"
+    },
+    {
+      "authors": "Cheng WC, Liao TT, Lin CC, Yuan LE, Lan HY, Lin HH, Teng HW, Chang HC, Lin CH, Yang CY, Huang SC, Jiang JK, Yang SH, Yang MH*",
+      "joiner": ", . ",
+      "title": "RAB27B-activated secretion of stem-like tumor exosomes delivers the biomarker microRNA-146a-5p, which promotes tumorigenesis and associates with an immunosuppressive tumor microenvironment in colorectal cancer.",
+      "journal": "Int J Cancer.",
+      "details": "2019 Oct 15; 145(8):2209-2224",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ijc.32338"
+    },
+    {
+      "authors": "Gong L, Wong CH, Cheng WC, Tjong H, Menghi F, Ngan CY, Liu ET, Wei CL*",
+      "title": "Picky comprehensively detects high-resolution structural variants in nanopore long reads.",
+      "journal": "Nat Methods.",
+      "details": "2018 Jun;15(6):455-460",
+      "url": "https://www.nature.com/articles/s41592-018-0002-6"
+    },
+    {
+      "authors": "Wu MZ, Cheng WC, Chen SF, Nieh S, Connor CO, Liu CL, Tsai WW, Wu CJ, Martin L, Lin YS, Wu KJ, Lu LF, and Belmonte JC",
+      "title": "miR-25/93 mediates hypoxia-induced immunosuppression by repressing cGAS.",
+      "journal": "Nat Cell Biol.",
+      "details": "2017 Oct;19(10):1286-1296.",
+      "url": "https://www.nature.com/articles/ncb3615"
+    },
+    {
+      "authors": "Chung IF, Chang SH, Chen CY, Liu SH, Li CY, Chan CH, Shih CC, Cheng WC*",
+      "title": "YM500v3: a database for small RNA sequencing in human cancer research.",
+      "journal": "Nucleic Acids Res.",
+      "details": "2017 Jan 4; 45(D1):D925-D931.",
+      "url": "https://academic.oup.com/nar/article/45/D1/D925/2605868"
+    },
+    {
+      "authors": "Chung IF, Chen CY, Su SC, Li CY, Wu KJ, Wang HW*, Cheng WC*",
+      "title": "DriverDBv2: a database for human cancer driver gene research.",
+      "journal": "Nucleic Acids Res.",
+      "details": "2016 Jan 4;44(D1):D975-979.",
+      "url": "https://academic.oup.com/nar/article/44/D1/D975/2503104"
+    },
+    {
+      "authors": "Cheng WC, Chung IF, Tsai CF, Huang TS, Cheng CY, Wang SC, Chang TY, Sun HJ, Chao YC, Cheng CC, Wu CW, Wang HW*",
+      "title": "YM500v2: A small RNA sequencing (smRNA-seq) database for human cancer miRNome research.",
+      "journal": "Nucleic Acids Res.",
+      "details": ", 2015 Jan 28;43(D1):D862-D867 (SCI, IF: 11.561; 10/292 (3.4%) in BIOCHEMISTRY & MOLECULAR BIOLOGY)",
+      "url": "https://academic.oup.com/nar/article/43/D1/D862/2438425"
+    },
+    {
+      "authors": "Cheng WC, Chung IF,Chen CY, Sun HJ, Fen JJ, Teng WC, Chang TY, Wong TT, Wang HW*",
+      "title": "DriverDB: an exome sequencing database for cancer driver gene identification.",
+      "journal": "Nucleic Acids Res.",
+      "details": ", 2014 Jan;42(D1):D1048-1054",
+      "url": "https://academic.oup.com/nar/article/42/D1/D1048/1042620"
+    },
+    {
+      "authors": "Cheng WC, Chung IF, Huang TS, Chang ST, Sun HJ, Wong TT, Wang HW*",
+      "title": "YM500: a small RNA sequencing (smRNA-Seq) database for microRNA research.",
+      "journal": "Nucleic Acids Res.",
+      "details": ", 2013 Jan;41(D1): D285-D294.",
+      "url": "https://academic.oup.com/nar/article/41/D1/D285/1070913"
+    }
+  ],
+  "other": [
+    {
+      "year": "2025",
+      "items": [
+        {
+          "authors": "Ho CT, Liu YC, Chen CJ, Cheng WC, Lin CC, Wang WR, Huang XH, Chiang CC, Lai HY, Tsai YY, Chou LY, Yen YT, Wang CY, Hsu HC, Hung SC",
+          "title": "Precision stem cell regeneration enabled by a collagen-targeting, fate-directing bi-functional peptide.",
+          "journal": "Biomaterials.",
+          "details": "2025 Oct 28;328:123807.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0142961225007264"
+        },
+        {
+          "authors": "Sun TC, Yu CF, Wu SY, Cheng WC, Chiang CS, Chen FH",
+          "title": "Microglia limit brain tumor development by restricting tumor cell proliferation and inducing T-cell immunity.",
+          "journal": "Mol Oncol.",
+          "details": "2025 Sep;19(9):2670-2685.",
+          "url": "https://febs.onlinelibrary.wiley.com/doi/10.1002/1878-0261.70102"
+        },
+        {
+          "authors": "Wang SC, Shen YC, Pan MR, Ou-Yang F, Liao TY, Liu LC, Rau KM, Lu LS, Huang CC, Dai MS, Lu YS, Chang HW, Chang H, Chang KP, Wang J, Tsai CJ, Chou IW, Li HW, Cheng WC, Li TC, Cha TL, Liao GS, Chiu CF, Huang CS, Tseng LM, Chiou JF, Sheen-Chen SM, Hou MF, Hung MC",
+          "title": "Deglycosylated PD-L1 is a biomarker for immune checkpoint blockade response: a real-world study in breast cancer patients in Taiwan.",
+          "journal": "Cancer Lett.",
+          "details": "2025 Jul 10:631:217912.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S030438352500480X"
+        },
+        {
+          "authors": "Lin YZ, Liu CH, Wu WR, Liao TY, Lee CC, Li HW, Chung FC, Shen YC, Zhuo GY, Liu LC, Cheng WC, Wang SC",
+          "title": "Memory-promoting function of miR-379-5p attenuates CD8+ T cell exhaustion by targeting immune checkpoints.",
+          "journal": "J Immunother Cancer.",
+          "details": "2025 Apr 12;13(4):e010363.",
+          "url": "https://jitc.bmj.com/content/13/4/e010363"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "items": [
+        {
+          "authors": "Su YT, Chang WC, Chen L, Yu YC, Lin WJ, Lin JY, Cheng WC, Yang JC, Hung YC, Ma WL",
+          "title": "Ether-Linked Glycerophospholipids Are Potential Chemo-Desensitisers and Are Associated With Overall Survival in Carcinoma Patients. Su YT, Chang WC, Chen L, Yu YC, Lin WJ, Lin JY,",
+          "journal": "J Cell Mol Med.",
+          "details": "2024 Dec;28(24):e70277.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.70277"
+        },
+        {
+          "authors": "Chen PR, Li CY, Yazal T, Chen IC, Liu PL, Chen YT, Liu CC, Lo J, Lin TC, Chang CT, Wu HE, Chen YR, Cheng WC, Chiu CC, Chen CS, Wang SC",
+          "title": "Protective effects of nordalbergin against LPS-induced endotoxemia through inhibiting MAPK/NF-κB signaling pathway, NLRP3 inflammasome activation, and ROS production.",
+          "journal": "Inflamm Res.",
+          "details": "2024 Oct;73(10):1657-1670.",
+          "url": "https://link.springer.com/article/10.1007/s00011-024-01922-4"
+        },
+        {
+          "authors": "Liu JP, Shen KY, Cheng WC, Chang WC, Hsieh CY, Lo CC, Kuo TT, Lin CC, Liu SJ, Huang WC, Sher YP",
+          "title": "ADAM9 drives the immunosuppressive microenvironment by cholesterol biosynthesis-mediated activation of IL6-STAT3 signaling for lung tumor progression.",
+          "journal": "Am J Cancer Res",
+          "details": "2024 Apr 15;14(4):1850-1865.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11076253/"
+        },
+        {
+          "authors": "Tsai YC, Huang SP, Cheng WC, Fan YC, Lin YC, Tsai SY, Huang CY, Yu CC, Lin VC, Geng JH, Li CY, Lu TL, Bao BY",
+          "title": "Identifying the role of MTHFD1L in prostate cancer progression from genetic analysis and experimental validation.",
+          "journal": "Am J Cancer Res",
+          "details": "2024 Jan 15;14(1):169-181.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10839318/"
+        },
+        {
+          "authors": "Widjaya MA, Lee SD, Cheng WC, Wu BT",
+          "title": "Effects of Exercise Training on Immune-Related Genes and Pathways in the Cortex of Animal Models of Alzheimer's Disease: A Systematic Review.",
+          "journal": "J Alzheimers Dis",
+          "details": "2024;98(4):1219-1234.",
+          "url": "https://journals.sagepub.com/doi/full/10.3233/JAD-230803"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "items": [
+        {
+          "authors": "Melano I, Cheng WC, Kuo LL, Liu YM, Chou YC, Hung MC, Lai MMC, Sher YP, Su WC",
+          "title": "A disintegrin and metalloproteinase domain 9 facilitates SARS-CoV-2 entry into cells with low ACE2 expression.",
+          "journal": "Microbiol Spectr.",
+          "details": "2023 Sep 15;11(5):e0385422.",
+          "url": "https://journals.asm.org/doi/10.1128/spectrum.03854-22"
+        },
+        {
+          "authors": "Hong X, Hsieh MT, Tseng TY, Lin HY, Chang HC, Yau ST, Cheng WC, Ke B, Liao HH, Wu CY, Liu AA, Wu MM, Huang KY, Yang PC, Kuo SC, Hung MC*, Lee PC*",
+          "title": "Diarylheptanoid 35d overcomes EGFR TKI resistance by inducing hsp70-mediated lysosomal degradation of EGFR in EGFR-mutant lung adenocarcinoma.",
+          "journal": "J Biol Chem.",
+          "details": "2023 Jun;299(6):104814.",
+          "url": "https://www.jbc.org/article/S0021-9258(23)01842-2/fulltext"
+        },
+        {
+          "authors": "Wu HE, Su CC, Wang SC, Liu PL, Cheng WC, Yeh HC, Chuu CP, Chen JK, Bao BY, Lee CH, Ke CC, Chen YR, Yu YH, Huang SP, Li CY",
+          "title": "Anticancer Effects of Morusin in Prostate Cancer via Inhibition of Akt/mTOR Signaling Pathway.",
+          "journal": "Am J Chin Med.",
+          "details": "2023;51(4):1019-1039.",
+          "url": "https://www.worldscientific.com/doi/10.1142/S0192415X23500477"
+        },
+        {
+          "authors": "Chang CK, Chang KH, Cheng WC, Chen PK, Chiang EI, Chang SH, Li YC, Chen CH, Chen DY*",
+          "title": "Lipid metabolomic signature might predict subclinical atherosclerosis in patients with active rheumatoid arthritis.",
+          "journal": "Clin Exp Rheumatol.",
+          "details": "2023 May 4; 41(5):1120-1128.",
+          "url": "https://www.clinexprheumatol.org/abstract.asp?a=18824"
+        },
+        {
+          "authors": "Lee HC, Cheng WC, Ma WL, Lin YH, Shin SJ, Lin YH",
+          "title": "Association of lipid composition and unsaturated fatty acids of VLDL with atrial remodeling in metabolic syndrome.",
+          "journal": "Sci Rep.",
+          "details": "2023 Apr 21;13(1):6575.",
+          "url": "https://www.nature.com/articles/s41598-023-33757-0"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "items": [
+        {
+          "authors": "Chen YR, Wang SC, Huang SP, Su CC, Liu PL, Cheng WC, Chuu CP, Chen JK, Bao BY, Lee CH, Ke CC, Wu HE, Chang HH, Yeh HC, Li CY",
+          "title": "Protodioscin inhibits bladder cancer cell migration and growth, and promotes apoptosis through activating JNK and p38 signaling pathways.",
+          "journal": "Biomedicine & Pharmacotherapy.",
+          "details": "2022 Dec;156,113929.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S075333222201318X"
+        },
+        {
+          "authors": "Yu YC, Ahmed A, Lai HC, Cheng WC, Yang JC, Chang WC, Chen LM, Shan YS, Ma WL*",
+          "title": "Review of the endocrine organ-like tumor hypothesis of cancer cachexia in pancreatic ductal adenocarcinoma.",
+          "journal": "Front Oncol.",
+          "details": "2022 Nov 17;12:1057930.",
+          "url": "https://www.frontiersin.org/articles/10.3389/fonc.2022.1057930/full"
+        },
+        {
+          "authors": "Yeh HC, Su CC, Wu YH, Lee CH, Bao BY, Cheng WC, Wang SC, Liu PL, Chiu CC, Chuu CP, Ke CC, Wu HE, Chen YR, Chung WJ, Huang SP*, Li CY*",
+          "title": "Novel insights into the anti-cancer effects of 3-bromopyruvic acid against castration-resistant prostate cancer.",
+          "journal": "Eur J Pharmacol.",
+          "details": "2022 May 15;923:174929.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S001429992200190X"
+        },
+        {
+          "authors": "Lu TL, Sher YP, Chen HC, Cheng WC, Hsu LH, Lee CC*",
+          "title": "Articulatin B chain induced dendritic cells maturation and driven type I T helper cells and cytotoxic T cells activation.",
+          "journal": "Life Sci.",
+          "details": "2022 May 13;302:120635.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0024320522004705"
+        },
+        {
+          "authors": "Ma WL, Chang N, Yu Y, Su YT, Chen GY, Cheng WC, Wu YC, Li CC, Chang WC, Yang JC*",
+          "title": "Ursolic acid silences CYP19A1/aromatase to suppress gastric cancer growth.",
+          "journal": "Cancer Med.",
+          "details": "2022 May 11;11(14):2824-2835.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/cam4.4536"
+        },
+        {
+          "authors": "Li CY, Huang SP, Chen YT, Wu HE, Cheng WC, Huang CY, Yu CC, Lin VC, Geng JH, Lu TL, Bao BY*",
+          "title": "TNFRSF13B is a potential contributor to prostate cancer.",
+          "journal": "Cancer Cell Int.",
+          "details": "2022 May 6;22(1):180.",
+          "url": "https://cancerci.biomedcentral.com/articles/10.1186/s12935-022-02590-2"
+        },
+        {
+          "authors": "Wu FL, Chu PY, Chen GY, Wang K, Hsu WY, Ahmed A, Ma WL, Cheng WC, Wu YC*, Yang JC*",
+          "title": "Natural anthraquinone compound emodin as a novel inhibitor of aurora A kinase: A pilot study.",
+          "journal": "Chem Biol Drug Des.",
+          "details": "2022 Jan;99(1):126-135.",
+          "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1111/cbdd.13938"
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "items": [
+        {
+          "authors": "Chang CK, Cheng WC, Ma WL, Chen PK, Chen CH, Shen PC, Chen CC, Chang SH, Lai YH, Chen DY*",
+          "title": "The Potential Role of Electronegative High-Density Lipoprotein H5 Subfraction in RA-Related Atherosclerosis.",
+          "journal": "Int J Mol Sci.",
+          "details": "2021 Oct 22;22(21):11419.",
+          "url": "https://www.mdpi.com/1422-0067/22/21/11419"
+        },
+        {
+          "authors": "Shabangu CS, Siphepho PY, Li CY, Cheng WC, Lu MY, Huang CF, Yeh ML, Dai CY, Huang JF, Chuang WL, Lin ZY, Yu ML, Wang SC*",
+          "title": "The Persistence of Hepatitis C Virus Infection in Hepatocytes Promotes Hepatocellular Carcinoma Progression by Pro-Inflammatory Interluekin-8 Expression.",
+          "journal": "Biomedicines.",
+          "details": "2021 Oct 11;9(10):1446.",
+          "url": "https://www.mdpi.com/2227-9059/9/10/1446"
+        },
+        {
+          "authors": "Lee PY, Lai YH, Liu PL, Liu CC, Su CC, Chiu FY, Cheng WC, Hsu SL, Cheng KC, Chiu LY, Kao TE, Lin CC, Chang YC, Wang SC*, Li CY*",
+          "title": "Toxicity of amantadine hydrochloride on cultured bovine cornea endothelial cells.",
+          "journal": "Sci Rep.",
+          "details": "2021 Sep 16;11(1):18514.",
+          "url": "https://www.nature.com/articles/s41598-021-98005-9"
+        },
+        {
+          "authors": "Lin YS, Kuo TT, Lo CC, Cheng WC, Chang WC, Tseng GC, Bai ST, Huang YK, Hsieh CY, Hsu HS, Jiang YF, Lin CY, Lai LC, Li XG, Sher YP*",
+          "title": "ADAM9 functions as a transcriptional regulator to drive angiogenesis in esophageal squamous cell carcinoma.",
+          "journal": "Int J Biol Sci.",
+          "details": "2021 Sep 7;17(14):3898-3910.",
+          "url": "https://www.ijbs.com/v17p3898.htm"
+        },
+        {
+          "authors": "He YH, Yeh MH, Chen HF, Wang TS, Wong RH, Wei YL, Huynh TK, Hu DW, Cheng FJ, Chen JY, Hu SW, Huang CC, Chen Y, Yu J, Cheng WC, Shen PC, Liu LC, Huang CH, Chang YJ, Huang WC*",
+          "title": "ERα determines the chemo-resistant function of mutant p53 involving the switch between lincRNA-p21 and DDB2 expressions.",
+          "journal": "Mol Ther Nucleic Acids.",
+          "details": "2021 Sep 3;25:536-553.",
+          "url": "https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(21)00190-6"
+        },
+        {
+          "authors": "Lee PY, Liu CC, Wang SC, Chen KY, Lin TC, Liu PL, Chiu CC, Chen IC, Lai YH, Cheng WC, Chung WJ, Yeh HC, Huang CH, Su CC, Huang SP, Li CY*",
+          "title": "Mycotoxin Zearalenone Attenuates Innate Immune Responses and Suppresses NLRP3 Inflammasome Activation in LPS-Activated Macrophages.",
+          "journal": "Toxins (Basel).",
+          "details": "2021 Aug 25;13(9):593.",
+          "url": "https://www.mdpi.com/2072-6651/13/9/593"
+        },
+        {
+          "authors": "Wang YL, Lee CC, Shen YC, Lin PL, Wu WR, Lin YZ, Cheng WC, Chang H, Hung Y, Cho YC, Liu LC, Xia WY, Ji JH, Liang JA, Chiang SF, Liu CG, Yao J, Hung MC*, Wang SC*",
+          "title": "Evading immune surveillance via tyrosine phosphorylation of nuclear PCNA.",
+          "journal": "Cell Rep.",
+          "details": "2021 Aug 24;36(8):109537.",
+          "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00971-2"
+        },
+        {
+          "authors": "Huang CL, Chiang YC, Chang WC, Su YT, Yang JC, Cheng WC, Lane HY, Ho IK, Ma WL*",
+          "title": "Add-On Selective Estrogen Receptor Modulators for Methadone Maintenance Treatment.",
+          "journal": "Front Endocrinol (Lausanne).",
+          "details": "2021 Aug 5;12:638884.",
+          "url": "https://www.frontiersin.org/articles/10.3389/fendo.2021.638884/full"
+        },
+        {
+          "authors": "Huang CH, Wang SC, Chen IC, Chen YT, Liu PL, Fang SH, Huang SP, Yeh HC, Liu CC, Lee PY, Lin TC, Cheng WC, Su CC, Wu HE, Chen YR, Li CY*",
+          "title": "Protective Effect of Piplartine against LPS-Induced Sepsis through Attenuating the MAPKs/NF-κB Signaling Pathway and NLRP3 Inflammasome Activation.",
+          "journal": "Pharmaceuticals (Basel).",
+          "details": "2021 Jun 18;14(6):588.",
+          "url": "https://www.mdpi.com/1424-8247/14/6/588"
+        },
+        {
+          "authors": "Su CC, Wang SC, Chen IC, Chiu FY, Liu PL, Huang CH, Huang KH, Fang SH, Cheng WC, Huang SP, Yeh HC, Liu CC, Lee PY, Huang MY, Li CY*",
+          "title": "Zerumbone suppresses the LPS-induced inflammatory response and represses activation of the NLRP3 inflammasome in macrophages.",
+          "journal": "Front Pharmacol.",
+          "details": "2021 May 11;12:1008.",
+          "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.652860/full"
+        },
+        {
+          "authors": "Wang SC, Li CY, Chang WT, Cheng WC, Yen CH, Tu WY, Lin ZY, Lin CC, Yeh ML, Huang CF, Huang JF, Dai CY, Chuang WL, Chen YL, Yu ML",
+          "title": "Exosome‐derived differentiation antagonizing non‐protein coding RNA with risk of hepatitis C virus‐related hepatocellular carcinoma recurrence.",
+          "journal": "Liver International.",
+          "details": "2021 May; 41(5), 956-968.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/liv.14772"
+        },
+        {
+          "authors": "Lin YA, Chu PY, Ma WL, Cheng WC, Chan ST, Yang JC*, Wu YC*",
+          "title": "Enzyme-Digested Peptides Derived from Lates calcarifer Enhance Wound Healing after Surgical Incision in a Murine Model.",
+          "journal": "Mar Drugs.",
+          "details": "2021 Mar 16;19(3):154.",
+          "url": "https://www.mdpi.com/1660-3397/19/3/154"
+        },
+        {
+          "authors": "Liu WL, Li CY, Cheng WC, Chang CY, Chen YH, Lu CY, Wang SC, Liu YR, Cheng MH*, Chong IW, Liu PL*",
+          "title": "High Mobility Group Box 1 Promotes Lung Cancer Cell Migration and Motility via Regulation of Dynamin-Related Protein 1.",
+          "journal": "Int J Mol Sci.",
+          "details": "2021 Mar 31;22(7):3628.",
+          "url": "https://www.mdpi.com/1422-0067/22/7/3628"
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "items": [
+        {
+          "authors": "Tsai LH, Hsu KW, Chiang CM, Yang HJ, Liu YH, Yang SF, Peng PH, Cheng WC, Wu HH*",
+          "title": "Targeting interleukin-17 receptor B enhances gemcitabine sensitivity through downregulation of mucins in pancreatic cancer.",
+          "journal": "Sci Rep.",
+          "details": "2020 Oct 20;10(1):17817.",
+          "url": "https://www.nature.com/articles/s41598-020-73659-z"
+        },
+        {
+          "authors": "Lin CC, Huang YK, Cho CF, Lin YS, Lo CC, Kuo TT, Tseng GC, Cheng WC, Chang WC, Hsiao TH, Lai LC, Shih JY, Liu YH, Chao KSC, Hsu JL, Lee PC, Sun X, Hung MC, Sher YP*",
+          "title": "Targeting positive feedback between BASP1 and EGFR as a therapeutic strategy for lung cancer progression.",
+          "journal": "Theranostics.",
+          "details": "2020 Aug 29;10(24):10925-10939.",
+          "url": "https://www.thno.org/v10p10925.htm"
+        },
+        {
+          "authors": "Ke CC, Chen LC, Yu CC, Cheng WC, Huang CY, Lin VC, Lu TL, Huang SP*, Bao BY*",
+          "title": "Genetic Analysis Reveals a Significant Contribution of CES1 to Prostate Cancer Progression in Taiwanese Men.",
+          "journal": "Cancers (Basel).",
+          "details": "2020 May 25;12(5):1346.",
+          "url": "https://www.mdpi.com/2072-6694/12/5/1346"
+        },
+        {
+          "authors": "Chang WC, Wang HC, Cheng WC, Yang JC, Chung WM, Ho YP, Chen L, Hung YC, Ma WL*",
+          "title": "LDLR-mediated lipidome-transcriptome reprogramming in cisplatin insensitivity.",
+          "journal": "Endocr Relat Cancer.",
+          "details": "2020 Feb 1;27(2):81-95.",
+          "url": "https://erc.bioscientifica.com/view/journals/erc/27/2/ERC-19-0095.xml"
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "items": [
+        {
+          "authors": "Yang JC, Chang N, Wu DC, Cheng WC, Chung WM, Chang WC, Lei FJ, Liu CJ, Wu IC, Lai HC*, Ma WL*",
+          "title": "Preclinical evaluation of exemestane as a novel chemotherapy for gastric cancer.",
+          "journal": "J Cell Mol Med.",
+          "details": "2019 Nov;23(11):7417-7426.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.14605"
+        },
+        {
+          "authors": "Liu LC, Wang YL, Lin PL, Zhang X, Cheng WC, Liu SH, Chen CJ, Hung Y, Jan CI, Chang LC, Qi X, Hsieh-Wilson LC, Wang SC*",
+          "title": "Long non-coding RNA HOTAIR promotes invasion of breast cancer cells through chondroitin sulfotransferase CHST15.",
+          "journal": "Int J Cancer.",
+          "details": "2019 Nov 1;145(9):2478-2487.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/ijc.32319"
+        },
+        {
+          "authors": "Yu CC, Chen LC, Lin VC, Huang CY, Cheng WC, Hsieh AR, Chang TY, Lu TL, Lee CH, Huang SP*, Bao BY*",
+          "title": "Effect of genetic variants in cell adhesion pathways on the biochemical recurrence in prostate cancer patients with radical prostatectomy.",
+          "journal": "Cancer Med.",
+          "details": "2019 Jun;8(6):2777-2783.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/cam4.2163"
+        },
+        {
+          "authors": "Hung YL, Wang SC, Suzuki K, Fang SH, Chen CS, Cheng WC, Su CC, Yeh HC, Tu HP, Liu PL, Huang MY, Li CY*",
+          "title": "Bavachin attenuates LPS-induced inflammatory response and inhibits the activation of NLRP3 inflammasome in macrophages.",
+          "journal": "Phytomedicine.",
+          "details": "2019 Jun 1;59:152785.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0944711318305993"
+        },
+        {
+          "authors": "Kao SH, Cheng WC, Wang YT, Wu HT, Yeh HY, Chen YJ, Tsai MH, Wu KJ*",
+          "title": "Regulation of miRNA biogenesis and histone modification by K63-polyubiquitinated DDX17 controls cancer stem-like features.",
+          "journal": "Cancer Res.",
+          "details": "2019 May 15;79(10):2549-2563.",
+          "url": "https://aacrjournals.org/cancerres/article/79/10/2549/543042/Regulation-of-miRNA-Biogenesis-and-Histone"
+        },
+        {
+          "authors": "Han Y, Yang J, Qian X, Cheng WC, Liu SH, Hua X, Zhou L, Yang Y, Wu Q, Liu P*, Lu Y*",
+          "title": "DriverML: a machine learning algorithm for identifying driver genes in cancer sequencing studies.",
+          "journal": "Nucleic Acids Res.",
+          "details": "2019 May 7;47(8):e45.",
+          "url": "https://academic.oup.com/nar/article/47/8/e45/5371337"
+        },
+        {
+          "authors": "Su CC, Hsieh KL, Liu PL, Yeh HC, Huang SP, Fang SH, Cheng WC, Huang KH, Chiu FY, Lin IL, Huang MY*, Li CY*",
+          "title": "AICAR Induces Apoptosis and Inhibits Migration and Invasion in Prostate Cancer Cells Through an AMPK/mTOR-Dependent Pathway.",
+          "journal": "Int J Mol Sci.",
+          "details": "2019 Apr 3;20(7):1647.",
+          "url": "https://www.mdpi.com/1422-0067/20/7/1647"
+        },
+        {
+          "authors": "Hsu RH, Hwu WL, Chen M, Chung IF, Peng SS, Chen CY, Cheng WC, Chien YH, Lee NC*",
+          "title": "Next-generation sequencing identifies TRPV4-related skeletal dysplasia in a boy with progressive bowlegs.",
+          "journal": "Pediatr Neonatol.",
+          "details": "2019 Feb 1;60(1):102-104.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1875957217305740"
+        },
+        {
+          "authors": "Hwang WL*, Lan HY, Cheng WC, Huang SC, Yang MH*",
+          "title": "Tumor stem-like cell-derived exosomal RNAs prime neutrophils for facilitating tumorigenesis of colon cancer.",
+          "journal": "J Hematol Oncol.",
+          "details": "2019 Jan 25;12(1):10.",
+          "url": "https://jhoonline.biomedcentral.com/articles/10.1186/s13045-019-0699-4"
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "items": [
+        {
+          "authors": "Huang CY, Hsueh YM, Chen LC, Cheng WC, Yu CC, Chen WJ, Lu TL, Lan KJ, Lee CH, Huang SP*, Bao BY*",
+          "title": "Clinical significance of glutamate metabotropic receptors in renal cell carcinoma risk and survival.",
+          "journal": "Cancer Med.",
+          "details": "2018 Dec;7(12):6104-6111.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/cam4.1901"
+        },
+        {
+          "authors": "Huang MY, Tu CE, Wang SC, Hung YL, Su CC, Fang SH, Chen CS, Liu PL, Cheng WC, Huang YW, Li CY*",
+          "title": "Corylin inhibits LPS-induced inflammatory response and attenuates the activation of NLRP3 inflammasome in microglia.",
+          "journal": "BMC Complement Altern Med.",
+          "details": "2018 Aug 15;18(1):221.",
+          "url": "https://bmccomplementmedtherapies.biomedcentral.com/articles/10.1186/s12906-018-2287-5"
+        },
+        {
+          "authors": "Kao TL, Kuan YP, Cheng WC, Chang WC, Jeng LB, Yeh S*, Ma WL*",
+          "title": "Estrogen receptors orchestrate cell growth and differentiation to facilitate liver regeneration.",
+          "journal": "Theranostics.",
+          "details": "2018 Apr 9;8(10):2672-2682.",
+          "url": "https://www.thno.org/v08p2672.htm"
+        },
+        {
+          "authors": "Chang WC, Cheng WC, Cheng BH, Chen L, Ju LJ, Ou YJ, Jeng LB, Yang MD, Hung YC*, Ma WL*",
+          "title": "Mitochondrial Acetyl-CoA Synthetase 3 is Biosignature of Gastric Cancer Progression.",
+          "journal": "Cancer Med.",
+          "details": "2018 Apr;7(4):1240-1252.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/cam4.1295"
+        },
+        {
+          "authors": "Lin KH, Huang MY, Cheng WC, Wang SC, Fang SH, Tu HP, Su CC, Hung YL, Liu PL, Chen CS, Wang YT, Li CY*",
+          "title": "RNA-seq transcriptome analysis of breast cancer cell lines under shikonin treatment.",
+          "journal": "Sci Rep.",
+          "details": "2018 Feb 8;8(1):2672.",
+          "url": "https://www.nature.com/articles/s41598-018-21065-x"
+        },
+        {
+          "authors": "Chen L, Bao BY, Chang WC, Ho JY, Cheng BH, Wang CL, Tang Q, Cheng WC, Chang HW, Hung YC*, Ma WL*",
+          "title": "Short androgen receptor poly-glutamine-promoted endometrial cancer is associated with benzo[a]pyrene-mediated aryl hydrocarbon receptor activation.",
+          "journal": "J Cell Mol Med.",
+          "details": "2018 Jan; 22(1):46-56.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.13291"
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "items": [
+        {
+          "authors": "Fan CC, Cheng WC, Huang YC, Sher YP, Liou NJ, Chien YC, Lin PS, Lin PS, Chen CH, Chang WC*",
+          "title": "EFHD2 promotes epithelial-to-mesenchymal transition and correlates with postsurgical recurrence of stage I lung adenocarcinoma.",
+          "journal": "Sci Rep.",
+          "details": "2017 Nov 3;7(1):14617.",
+          "url": "https://www.nature.com/articles/s41598-017-15186-y"
+        },
+        {
+          "authors": "Chiu KL, Lin YS, Kuo TT, Lo CC, Huang YK, Chang HF, Chuang EY, Lin CC, Cheng WC, Liu YN, Lai LC*, and Sher YP*",
+          "title": "ADAM9 Enhances CDCP1 by Inhibiting miR-1 through EGFR Signaling Activation in Lung Cancer Metastasis.",
+          "journal": "Oncotarget.",
+          "details": "2017 May 7;8(29):47365-47378.",
+          "url": "https://www.oncotarget.com/article/17648/"
+        },
+        {
+          "authors": "Hung YL, Fang SH, Wang SC, Cheng WC, Su CC, Chen CS, Huang MY, Hua KF, Shen KH, Wang YT, Suzuki K*, and Li CY*",
+          "title": "Corylin protects LPS-induced sepsis and attenuates LPS-induced inflammatory response.",
+          "journal": "Sci Rep.",
+          "details": "2017 Apr 11;7:46299.",
+          "url": "https://www.nature.com/articles/srep46299"
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "items": [
+        {
+          "authors": "Wu HT, Kuo YC, Hung JJ, Huang CH, Chen WY, Chou TY, Chen Y, Chen YJ, Chen YJ, Cheng WC, Teng SC, Wu KJ*",
+          "title": "K63-polyubiquitinated HAUSP deubiquitinates HIF-1α and dictates H3K56 acetylation promoting hypoxia-induced tumour progression.",
+          "journal": "Nat Commun.",
+          "details": "2016 Dec 9;7:13644.",
+          "url": "https://www.nature.com/articles/ncomms13644"
+        },
+        {
+          "authors": "Chang WC, Huang SF, Lee YM, Lai HC, Cheng BH, Cheng WC, Ho YP, Jeng LB, Ma WL*",
+          "title": "Cholesterol import and steroidogenesis are biosignatures for gastric cancer patient survival.",
+          "journal": "Oncotarget.",
+          "details": "2016 Nov 23; 8(1):692-704.",
+          "url": "https://www.oncotarget.com/article/13524/"
+        },
+        {
+          "authors": "Lai HC, Yeh CC, Jeng LB, Huang SF, Liao PY, Lei FJ, Cheng WC, Hsu CL, Cai X, Chang C*, Ma WL*",
+          "title": "Androgen receptor mitigates postoperative disease progression of hepatocellular carcinoma by suppressing CD90+ populations and cell migration and by promoting anoikis in circulating tumor cells.",
+          "journal": "Oncotarget.",
+          "details": "2016 Jun 20;7(29): 46448–46465.",
+          "url": "https://www.oncotarget.com/article/10186/"
+        }
+      ]
+    },
+    {
+      "year": "Before 2016",
+      "items": [
+        {
+          "authors": "Wang HW, Sun HJ, Chang TY, Lo HH, Cheng WC, Tseng GC, Lin CT, Chang SJ, Pal N, and Chung IF*",
+          "title": "Discovering monotonic stemness marker genes from time-series stem cell microarray data.",
+          "journal": "BMC Genomics.",
+          "details": "2015 Jan 21;16(Suppl 2):S2.",
+          "url": "https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S2-S2"
+        },
+        {
+          "authors": "Tsai YP, Chen HF, Chen SY, Cheng WC, Wang HW, Shen ZJ, Song C, Teng SC, He C, Wu KJ*",
+          "title": "TET1 regulates hypoxia-induced epithelial-mesenchymal transition by acting as a co-activator.",
+          "journal": "Genome Biol.",
+          "details": "2014 Dec;15(12):513.",
+          "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0513-0"
+        },
+        {
+          "authors": "Huang HN, Chen SY, Hwang SM, Yu CC, Su MW, Mai W, Wang HW, Cheng WC, Schuyler SC, Ma N, Lu FL, Lu J*",
+          "title": "miR-200c and GATA binding protein 4 regulate human embryonic stem cell renewal and differentiation.",
+          "journal": "Stem Cell Research.",
+          "details": "2014 Mar 1;12(2):338-353.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1873506113001712"
+        },
+        {
+          "authors": "Chen KH*, Wang KJ, Tsai ML, Wang KM, Adrian AM, Cheng WC, Yang TS, Teng NC, Tan KP, Chang KS",
+          "title": "Gene selection for cancer identification: a decision tree model empowered by particle swarm optimization algorithm.",
+          "journal": "BMC Bioinformatics.",
+          "details": "2014 Feb 20;15(1):49.",
+          "url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-49"
+        },
+        {
+          "authors": "Li CY*, Chiang CS, Cheng WC, Chen CR, Shu WY, Tsai ML, Huang CL, Chang HZ, Hseu RS, Chang CW, Fang SH, Hsu IC",
+          "title": "Gene expression profiling of dendritic cells in different physiological stages under Cordyceps sinensis treatment.",
+          "journal": "PLoS One.",
+          "details": "2012 Jul 19;7(7):e40824.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0040824"
+        },
+        {
+          "authors": "Cheng WC, Shu WY, Li CY, Tsai ML, Chang CW, Chen CR, Wang TH*, and Hsu IC*",
+          "title": "Intra- and Inter-Individual variance of gene expression in clinical studies.",
+          "journal": "PLoS One.",
+          "details": "2012 Jun 18;7(6):e38650.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0038650"
+        },
+        {
+          "authors": "Chen CR, Shu WY, Tsai ML, Cheng WC, Hsu IC*",
+          "title": "THEME: a web tool for loop-design microarray data analysis.",
+          "journal": "Computers in Biology and Medicine.",
+          "details": "2012 Feb 1;42(2):228-234.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0010482511002319"
+        },
+        {
+          "authors": "Chang CW, Cheng WC, Chen CR, Shu WY, Tsai ML, Huang CL, Hsu IC",
+          "title": "Identification of human housekeeping genes and tissue-selective genes by microarray meta-analysis.",
+          "journal": "PLoS One.",
+          "details": "2011 Jul 27;6(7): e22859.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0022859"
+        },
+        {
+          "authors": "Cheng WC, Chang CW, Chen CR, Tsai ML, Shu WY, Li CY, and Hsu IC*",
+          "title": "Identification of reference genes across physiological states for qRT-PCR through microarray meta-analysis.",
+          "journal": "PLoS One.",
+          "details": "2011 Feb 24;6(2): e17347.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0017347"
+        },
+        {
+          "authors": "Li CY, Chao LP, Wang SC, Tsai ML, Chang HZ, Fang SH, Liao PC, Ho CL, Chen ST, Cheng WC, Chiang CS, Hua KF*, Hsu IC",
+          "title": "Honokiol inhibits LPS-induced maturation and inflammatory response of human monocyte-derived dendritic cells.",
+          "journal": "Journal of Cellular Physiology.",
+          "details": "2011 Sep;226(9):2338-2349.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcp.22576"
+        },
+        {
+          "authors": "Cheng WC, Tsai ML, Chang CW, Huang CL, Chen CR, Shu WY, Lee YS, Wang TH, Hong JH, Li CY, Hsu IC*",
+          "title": "Microarray meta-analysis Database (M2DB): a uniformly pre-processed, quality controlled, and manually curated human clinical microarray database.",
+          "journal": "BMC Bioinformatics.",
+          "details": "2010 Aug 10;11(1):421.",
+          "url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-421"
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "authors": "Liu SH, Cheng WC*",
+      "title": "Identification of Cancer Driver Genes from a Custom Set of Next Generation Sequencing Data. In “Cancer Driver Genes”",
+      "journal": "Methods Mol Biol.",
+      "details": "2019;1907:19–36.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30542988/"
+    }
+  ]
+}

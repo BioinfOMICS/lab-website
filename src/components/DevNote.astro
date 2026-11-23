@@ -1,0 +1,8 @@
+---
+/**
+ * A dashed note that marks content still to be supplied. It shows only while developing
+ * (npm run dev). It is left out of the built site, so a reminder can never be published.
+ */
+const show = import.meta.env.DEV;
+---
+{show && <p class="dev-note" style={Astro.props.style}><slot /></p>}
