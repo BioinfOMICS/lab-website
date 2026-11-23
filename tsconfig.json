@@ -5,8 +5,6 @@
     "**/*"
   ],
   "exclude": [
-    "dist",
-    "_archive",
-    "ref_doc"
+    "dist"
   ]
 }

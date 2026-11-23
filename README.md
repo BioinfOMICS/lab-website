@@ -51,7 +51,7 @@ The rest of this page is the maintenance guide for lab members, written in Chine
   `{ "year": "2026", "items": [ ... ] }`。
 - `books`（Book & chapter）。
 
-作者名單裡 PI 的名字會自動變粗體。要比對的寫法設定在 `src/data/site.json` 的 `nameInCitations`。
+作者名單裡實驗室主持人的名字會自動變粗體。要比對的寫法設定在 `src/data/site.json` 的 `nameInCitations`。
 
 #### 新增或異動成員
 
