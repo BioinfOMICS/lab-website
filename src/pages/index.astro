@@ -33,8 +33,8 @@ const stats = [
   { value: String(peopleCount), label: 'Members & affiliates' },
 ];
 
-// The first three entries of "selected" in publications.json are shown here.
-const featured = publications.selected.slice(0, 3).map((p) => ({
+// Entries of "selected" marked "featured" in publications.json are shown here, in the file's order (newest first).
+const featured = publications.selected.filter((p) => p.featured).map((p) => ({
   ...p,
   shownTitle: p.title.replace(/\.$/, ''),
   // A journal named by one whole word ("Science.") is shown without the full stop; abbreviations keep theirs.

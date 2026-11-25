@@ -59,6 +59,8 @@ const PublicationSchema = z.strictObject({
   journal: text,
   details: text,
   url: link,
+  /** Shown in the home page's "Selected publications" list, in the order of this file. */
+  featured: z.boolean().optional(),
 });
 
 const PublicationsSchema = z.strictObject({

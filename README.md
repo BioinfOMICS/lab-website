@@ -46,7 +46,7 @@ The rest of this page is the maintenance guide for lab members, written in Chine
 
 放在哪一區：
 
-- `selected`（Selected publications）：新的放最上面。最前面三筆會出現在首頁。
+- `selected`（Selected publications）：新的放最上面。加上 `"featured": true` 的會出現在首頁，順序和這份清單相同。
 - `other`（Other publications）：依年份分組，新的年份放最上面。新的一年要先加一組
   `{ "year": "2026", "items": [ ... ] }`。
 - `books`（Book & chapter）。
